@@ -5,125 +5,145 @@ class Purchase_controller extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('/purchase/Dashboard');
+		$title['title'] = "Dashboard Purchases";
+        $this->template->load('Template','/purchase/Dashboard',$title);
 	}
 
 	//Operations Modul
 	//load view dropdown menu Operations - purchase order
 	public function PurchaseOrder()
 	{
-		$this->load->view('/purchase/Operations/PurchaseOrder');
+		$title['title'] = "Purchase Orders";
+        $this->template->load('Template','/purchase/Operations/PurchaseOrder',$title);
 	}
 
 	//load view dropdown menu Operations - DirectGrn
 	public function DirectGrn()
 	{
-		$this->load->view('/purchase/Operations/DirectGrn');
+		$title['title'] = "Direct GRN";
+        $this->template->load('Template','/purchase/Operations/DirectGrn',$title);
 	}
 
 	//load view dropdown menu Operations - DirectInvoice
 	public function DirectInvoice()
 	{
-		$this->load->view('/purchase/Operations/DirectInvoice');
+		$title['title'] = "Direct Invoice";
+        $this->template->load('Template','/purchase/Operations/DirectInvoice',$title);
 	}
 
 	//load view dropdown menu Operations - BadDebtProcessing
 	public function BadDebtProcessing()
 	{
-		$this->load->view('/purchase/Operations/BadDebtProcessing');
+		$title['title'] = "Bad Debt Processing";
+        $this->template->load('Template','/purchase/Operations/BadDebtProcessing',$title);
 	}
 
 	//load view dropdown menu Operations - SupplierInvoices
 	public function SupplierInvoices()
 	{
-		$this->load->view('/purchase/Operations/SupplierInvoices');
+		$title['title'] = "Supplier Invoices";
+        $this->template->load('Template','/purchase/Operations/SupplierInvoices',$title);
 	}
 
 	//load view dropdown menu Operations - PaymentsToSuppliers
 	public function PaymentsToSuppliers()
 	{
-		$this->load->view('/purchase/Operations/PaymentsToSuppliers');
+		$title['title'] = "Payments to Supplier";
+        $this->template->load('Template','/purchase/Operations/PaymentsToSuppliers',$title);
 	}
 
 	//load view dropdown menu Operations - SupplierCreditNotes
 	public function SupplierCreditNotes()
 	{
-		$this->load->view('/purchase/Operations/SupplierCreditNotes');
+		$title['title'] = "Supplier Credit Notes";
+        $this->template->load('Template','/purchase/Operations/SupplierCreditNotes',$title);
 	}
 
 	//load view dropdown menu Operations - SupplierPayments_CreditNotes
 	public function SupplierPayments_CreditNotes()
 	{
-		$this->load->view('/purchase/Operations/SupplierPayments_CreditNotes');
+		$title['title'] = "Allocate Customer Payments or Credit Notes";
+        $this->template->load('Template','/purchase/Operations/SupplierPayments_CreditNotes',$title);
 	}
 
 	//Inquiry Modul
 	//load view dropdown menu Inquiry - SupplierTransaction
 	public function SupplierTransaction()
 	{
-		$this->load->view('/purchase/Inquiry/SupplierTransaction');
+		$title['title'] = "Supplier Transaction";
+        $this->template->load('Template','/purchase/Inquiry/SupplierTransaction',$title);
 	}
 
 	//load view dropdown menu Inquiry - SupplierAllocation
 	public function SupplierAllocation()
 	{
-		$this->load->view('/purchase/Inquiry/SupplierAllocation');
+		$title['title'] = "Supplier Allocation";
+        $this->template->load('Template','/purchase/Inquiry/SupplierAllocation',$title);
 	}
 
 	//load view dropdown menu Inquiry - CheckTransactions
 	public function CheckTransactions()
 	{
-		$this->load->view('/purchase/Inquiry/CheckTransactions');
+		$title['title'] = "Check Transactions";
+        $this->template->load('Template','/purchase/Inquiry/CheckTransactions',$title);
 	}
 
 	//Reports Modul
 	//load view dropdown menu Reports - SupplierLedger
 	public function SupplierLedger()
 	{
-		$this->load->view('/purchase/Reports/SupplierLedger');
+		$title['title'] = "Supplier Ledger";
+        $this->template->load('Template','/purchase/Reports/SupplierLedger',$title);
 	}
 
 	//load view dropdown menu Reports - AgeSupplierAnalysis
 	public function AgeSupplierAnalysis()
 	{
-		$this->load->view('/purchase/Reports/AgeSupplierAnalysis');
+		$title['title'] = "Age Supplier Analysis";
+        $this->template->load('Template','/purchase/Reports/AgeSupplierAnalysis',$title);
 	}
 
 	//load view dropdown menu Reports - PaymentReport
 	public function PaymentReport()
 	{
-		$this->load->view('/purchase/Reports/PaymentReport');
+		$title['title'] = "Payment Report";
+        $this->template->load('Template','/purchase/Reports/PaymentReport',$title);
 	}
 
 	//load view dropdown menu Reports - OutstandingGrnsReport
 	public function OutstandingGrnsReport()
 	{
-		$this->load->view('/purchase/Reports/OutstandingGrnsReport');
+		$title['title'] = "Outstanding GRNs Report";
+        $this->template->load('Template','/purchase/Reports/OutstandingGrnsReport',$title);
 	}
 
 	//load view dropdown menu Reports - SupplierDetailListing
 	public function SupplierDetailListing()
 	{
-		$this->load->view('/purchase/Reports/SupplierDetailListing');
+		$title['title'] = "Supplier Detail Listing";
+        $this->template->load('Template','/purchase/Reports/SupplierDetailListing',$title);
 	}
 
 	//Document Printing Modul
 	//load view dropdown menu Document Printing - Print Purchase Order
 	public function PrintPurchaseOrder()
 	{
-		$this->load->view('/purchase/DocumentPrinting/PrintPurchaseOrder');
+		$title['title'] = "Print Purchase Oders";
+        $this->template->load('Template','/purchase/DocumentPrinting/PrintPurchaseOrder',$title);
 	}
 
 	//load view dropdown menu Document Printing - Print Remittances
 	public function PrintRemittances()
 	{
-		$this->load->view('/purchase/DocumentPrinting/PrintRemittances');
+		$title['title'] = "Print Remittances";
+        $this->template->load('Template','/purchase/DocumentPrinting/PrintRemittances',$title);
 	}
 
 	//Housekeeping Modul
 	//load view dropdown menu Housekeeping - Supplier Maintenance
 	public function SupplierMaintenance()
 	{
-		$this->load->view('/purchase/Housekeeping/SupplierMaintenance');
+		$title['title'] = "Suppliers Maintenance";
+        $this->template->load('Template','/purchase/Housekeeping/SupplierMaintenance',$title);
 	}
 }
