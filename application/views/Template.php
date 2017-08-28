@@ -16,7 +16,7 @@
     <body>
     <div class="header">  
         <div class="uniq-logo">
-            <img src="assets/image/uniq-logo-icon.png"/>
+            <img src="<?php echo site_url()?>assets/image/uniq-logo-icon.png"/>
             <span>
                 UNIQ 365<br><b>version 1.3</b>
             </span>
@@ -66,7 +66,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>Sales</a>
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('index.php')?>/Sales_controller" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -214,7 +214,7 @@
 
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('index.php/Products_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -271,7 +271,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-cubes" aria-hidden="true"></i>Class</a>
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('index.php/Class_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -304,7 +304,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-cubes" aria-hidden="true"></i>Cash and GL</a>
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('index.php/Cash_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -391,7 +391,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-cubes" aria-hidden="true"></i>Accountant's Area</a>
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('index.php/Accountant_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -485,7 +485,7 @@
 
 
 <!-- Content Here -->
-    <div class="uniq-content">
+<div class="uniq-content">
     <div class="wrapped">
         <div class="container">
             <!-- content start here -->

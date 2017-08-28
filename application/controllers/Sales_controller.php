@@ -5,6 +5,7 @@ class Sales_controller extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('sales/dashboard.php');
+		$title['title'] = "Dashboard Sales";
+        $this->template->load('Template','sales/dashboard.php',$title);
 	}
 }
