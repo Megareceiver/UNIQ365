@@ -59,14 +59,14 @@
     <div class="uniq-menu">            
         <ul>
             <li>
-                <a href="<?php echo site_url('index.php')?>/Dashboard"><i class="fa fa-home"></i>Home</a>
+                <a href="<?php echo site_url('')?>Dashboard"><i class="fa fa-home"></i>Home</a>
             </li>
             <!-- SALES -->
             <li>
                 <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>Sales</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('index.php')?>/Sales_controller" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('')?>Sales_controller" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -150,29 +150,29 @@
                 <a href="#" class="menu-parent"><i class="fa fa-credit-card" aria-hidden="true"></i>Purchases</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('index.php/Purchase_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Purchase_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>
                         <div>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/PurchaseOrder')?>" data-title="PO">Purchase Orders</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/DirectGrn')?>" data-title="DG">Direct GRN</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/DirectInvoice')?>" data-title="DI">Direct Invoice</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/BadDebtProcessing')?>" data-title="BD">Bad Debt Processing</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierInvoices')?>" data-title="SI">Supplier Invoices</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/PaymentsToSuppliers')?>" data-title="PS">Payments to Supplier</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierCreditNotes')?>" data-title="SC">Supplier Credit Notes</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierPayments_CreditNotes')?>" data-title="AC">Allocate Customer Payments or Credit Notes</a>
+                            <a href="<?php echo site_url('Purchase_controller/PurchaseOrder')?>" data-title="PO">Purchase Orders</a>
+                            <a href="<?php echo site_url('Purchase_controller/DirectGrn')?>" data-title="DG">Direct GRN</a>
+                            <a href="<?php echo site_url('Purchase_controller/DirectInvoice')?>" data-title="DI">Direct Invoice</a>
+                            <a href="<?php echo site_url('Purchase_controller/BadDebtProcessing')?>" data-title="BD">Bad Debt Processing</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierInvoices')?>" data-title="SI">Supplier Invoices</a>
+                            <a href="<?php echo site_url('Purchase_controller/PaymentsToSuppliers')?>" data-title="PS">Payments to Supplier</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierCreditNotes')?>" data-title="SC">Supplier Credit Notes</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierPayments_CreditNotes')?>" data-title="AC">Allocate Customer Payments or Credit Notes</a>
                         </div>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="IQ">Inquiry</a>
                         <div>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierTransaction')?>" data-title="ST">Supplier Transaction</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierAllocation')?>" data-title="SA">Supplier Allocation</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/CheckTransactions')?>" data-title="CT">Check Transactions</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierTransaction')?>" data-title="ST">Supplier Transaction</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierAllocation')?>" data-title="SA">Supplier Allocation</a>
+                            <a href="<?php echo site_url('Purchase_controller/CheckTransactions')?>" data-title="CT">Check Transactions</a>
                             
                         </div>
                     </span>
@@ -180,11 +180,11 @@
                     <span>
                         <a href="#" class="menu-sub-child" data-title="RP">Reports</a>
                         <div>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierLedger')?>" data-title="SL">Supplier Ledger</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/AgeSupplierAnalysis')?>" data-title="AS">Age Supplier Analysis</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/PaymentReport')?>" data-title="PR">Payment Report</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/OutstandingGrnsReport')?>" data-title="OT">Outstanding GRNs Report</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierDetailListing')?>" data-title="SD">Supplier Detail Listing</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierLedger')?>" data-title="SL">Supplier Ledger</a>
+                            <a href="<?php echo site_url('Purchase_controller/AgeSupplierAnalysis')?>" data-title="AS">Age Supplier Analysis</a>
+                            <a href="<?php echo site_url('Purchase_controller/PaymentReport')?>" data-title="PR">Payment Report</a>
+                            <a href="<?php echo site_url('Purchase_controller/OutstandingGrnsReport')?>" data-title="OT">Outstanding GRNs Report</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierDetailListing')?>" data-title="SD">Supplier Detail Listing</a>
                             
                         </div>
                     </span>
@@ -192,8 +192,8 @@
                     <span>
                         <a href="#" class="menu-sub-child" data-title="DP">Document Printing</a>
                         <div>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/PrintPurchaseOrder')?>" data-title="PP">Print Purchase Oders</a>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/PrintRemittances')?>" data-title="PR">Print Remittances</a>
+                            <a href="<?php echo site_url('Purchase_controller/PrintPurchaseOrder')?>" data-title="PP">Print Purchase Oders</a>
+                            <a href="<?php echo site_url('Purchase_controller/PrintRemittances')?>" data-title="PR">Print Remittances</a>
                             
                         </div>
                     </span>
@@ -201,7 +201,7 @@
                     <span>
                         <a href="#" class="menu-sub-child" data-title="HK">Housekeeping</a>
                         <div>
-                            <a href="<?php echo site_url('index.php/Purchase_controller/SupplierMaintenance')?>" data-title="SM">Suppliers Maintenance</a>
+                            <a href="<?php echo site_url('Purchase_controller/SupplierMaintenance')?>" data-title="SM">Suppliers Maintenance</a>
                             
                         </div>
                     </span>
@@ -214,7 +214,7 @@
 
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('index.php/Products_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Products_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -271,7 +271,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-cubes" aria-hidden="true"></i>Class</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('index.php/Class_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Class_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -304,7 +304,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-money" aria-hidden="true"></i>Cash and GL</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('index.php/Cash_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Cash_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -391,7 +391,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Accountant's Area</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('index.php/Accountant_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Accountant_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
