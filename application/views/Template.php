@@ -12,6 +12,8 @@
         <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/uniq.resposive.css"/>
         
         <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+            <script src="<?php echo site_url()?>assets/js/Chart.bundle.js"></script>
+            <!-- <script src="<?php echo site_url()?>assets/js/Chart.js"></script> -->
     </head>
     <body>
     <div class="header">  
@@ -493,6 +495,8 @@
 <!-- Fotter -->
  <script type="text/javascript" src="<?php echo site_url()?>assets/js/datepicker.js"></script>
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/timepicker.js"></script>
+    <!-- <script type="text/javascript" src="<?php echo site_url()?>assets/js/src/chart.js"></script> -->
+
     <script type="text/javascript">
         $(document).ready(function(e){
             $('.uniq-menu li a.menu-parent').click(function( ){

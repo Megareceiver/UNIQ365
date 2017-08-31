@@ -1,6 +1,9 @@
     <script type="text/javascript" src="assets/js/datepicker.js"></script>
     <script type="text/javascript" src="assets/js/timepicker.js"></script>
+    <script type="text/javascript" src="assets/js/Chart.js-master/src/chart.js"></script>
+    
     <script type="text/javascript">
+
         $(document).ready(function(e){
             $('.uniq-menu li a.menu-parent').click(function( ){
                 $(this).toggleClass('rotate');
