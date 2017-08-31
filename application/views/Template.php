@@ -66,26 +66,25 @@
                 <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>Sales</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('')?>Sales_controller" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('')?>Sales_controller" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>
                         <div>
                             <!-- submenu -->
-                            <a href="#" data-title="SQ">Sales Quotation</a>
-                            <a href="#" data-title="SO">Sales Order</a>
-                            <a href="#" data-title="DD">Direct Delivery</a>
-                            <a href="#" data-title="DI">Direct Invoice</a>
-                            <a href="#" data-title="DA">Delivery Against Sales Orders</a>
-                            <a href="#" data-title="IA">Invoice Against Sales Delivery</a>
-                            <a href="#" data-title="BD">Bad Debt Processing</a>
-                            <a href="#" data-title="CD">Copy Delivery</a>
-                            <a href="#" data-title="CI">Copy Invoice</a>
-                            <a href="#" data-title="CR">Create and Print Recurring Invoice</a>
-                            <a href="#" data-title="CP">Customer Payments</a>
-                            <a href="#" data-title="CC">Customer Credit Notes</a>
-                            <a href="#" data-title="AC">Allocate Customer Payments or Credit Notes</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesQuotation')?>" data-title="SQ">Sales Quotation</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesOrder')?>" data-title="SO">Sales Order</a>
+                            <a href="<?php echo site_url('Sales_controller/DirectDelivery')?>" data-title="DD">Direct Delivery</a>
+                            <a href="<?php echo site_url('Sales_controller/DirectInvoice')?>" data-title="DI">Direct Invoice</a>
+                            <a href="<?php echo site_url('Sales_controller/DeliveryAgainstSalesOrders')?>" data-title="DA">Delivery Against Sales Orders</a>
+                            <a href="<?php echo site_url('Sales_controller/InvoiceAgainstSalesDelivery')?>" data-title="IA">Invoice Against Sales Delivery</a>
+                            <a href="<?php echo site_url('Sales_controller/CopyDelivery')?>" data-title="CD">Copy Delivery</a>
+                            <a href="<?php echo site_url('Sales_controller/CopyInvoice')?>" data-title="CI">Copy Invoice</a>
+                            <a href="<?php echo site_url('Sales_controller/CreateAndPrintRecurringInvoice')?>" data-title="CR">Create and Print Recurring Invoice</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerPayments')?>" data-title="CP">Customer Payments</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerCreditNotes')?>" data-title="CC">Customer Credit Notes</a>
+                            <a href="<?php echo site_url('Sales_controller/AllocateCustomerPaymentOrCreditNotes')?>" data-title="AC">Allocate Customer Payments or Credit Notes</a>
 
                         </div>
                     </span>
@@ -94,9 +93,8 @@
                         <a href="#" class="menu-sub-child" data-title="IQ">Inquiry</a>
                         <div>
                             <!-- submenu -->
-                            <a href="#" data-title="CT">Customer Transaction</a>
-                            <a href="#" data-title="CA">Customer Allocation</a>
-                            <a href="#" data-title="CT">Check Transactions</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerTransaction')?>" data-title="CT">Customer Transaction</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerAllocation')?>" data-title="CA">Customer Allocation</a>
 
                         </div>
                     </span>
@@ -105,13 +103,13 @@
                         <a href="#" class="menu-sub-child" data-title="RP">Reports</a>
                         <div>
                             <!-- submenu -->
-                            <a href="#" data-title="CL">Customer Ledger</a>
-                            <a href="#" data-title="AC">Aged Customer Analysis</a>
-                            <a href="#" data-title="CD">Customer Detail Listing</a>
-                            <a href="#" data-title="SS">Sales Summary Report</a>
-                            <a href="#" data-title="PL">Price Listing</a>
-                            <a href="#" data-title="OS">Order Status Listing</a>
-                            <a href="#" data-title="SL">Salesman Listing</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerLedger')?>" data-title="CL">Customer Ledger</a>
+                            <a href="<?php echo site_url('Sales_controller/AgedCustomerAnalysis')?>" data-title="AC">Aged Customer Analysis</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerDetailListing')?>" data-title="CD">Customer Detail Listing</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesSummaryReport')?>" data-title="SS">Sales Summary Report</a>
+                            <a href="<?php echo site_url('Sales_controller/PriceListing')?>" data-title="PL">Price Listing</a>
+                            <a href="<?php echo site_url('Sales_controller/OrderStatusListing')?>" data-title="OS">Order Status Listing</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesmanListing')?>" data-title="SL">Salesman Listing</a>
                         </div>
                     </span>
 
@@ -119,13 +117,13 @@
                         <a href="#" class="menu-sub-child" data-title="DP">Document Printing</a>
                         <div>
                             <!-- submenu -->
-                            <a href="#" data-title="PI">Print Invoices</a>
-                            <a href="#" data-title="PC">Print Credit Notes</a>
-                            <a href="#" data-title="PD">Print Deliveries</a>
-                            <a href="#" data-title="PT">Print Statements</a>
-                            <a href="#" data-title="PO">Print Sales Orders</a>
-                            <a href="#" data-title="PS">Print Sales Quotation</a>
-                            <a href="#" data-title="PR">Print Receipts</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintInvoices')?>" data-title="PI">Print Invoices</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintCreditNotes')?>" data-title="PC">Print Credit Notes</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintDeliveries')?>" data-title="PD">Print Deliveries</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintStatments')?>" data-title="PT">Print Statements</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintSalesOrders')?>" data-title="PO">Print Sales Orders</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintSalesQuotation')?>" data-title="PS">Print Sales Quotation</a>
+                            <a href="<?php echo site_url('Sales_controller/PrintReceipts')?>" data-title="PR">Print Receipts</a>
                         </div>
                     </span>
 
@@ -133,13 +131,13 @@
                         <a href="#" class="menu-sub-child" data-title="HK">Housekeeping</a>
                         <div>
                             <!-- submenu -->
-                            <a href="#" data-title="CM">Customer Maintenance</a>
-                            <a href="#" data-title="CB">Customer Branches</a>
-                            <a href="#" data-title="SG">Sales Groups</a>
-                            <a href="#" data-title="ST">Sales Types</a>
-                            <a href="#" data-title="SP">Sales Persons</a>
-                            <a href="#" data-title="SA">Sales Areas</a>
-                            <a href="#" data-title="CS">Credit Status Setup</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerMaintenance')?>" data-title="CM">Customer Maintenance</a>
+                            <a href="<?php echo site_url('Sales_controller/CustomerBranches')?>" data-title="CB">Customer Branches</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesGroup')?>" data-title="SG">Sales Groups</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesTypes')?>" data-title="ST">Sales Types</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesPersons')?>" data-title="SP">Sales Persons</a>
+                            <a href="<?php echo site_url('Sales_controller/SalesAreas')?>" data-title="SA">Sales Areas</a>
+                            <a href="<?php echo site_url('Sales_controller/CreditStatusSetup')?>" data-title="CS">Credit Status Setup</a>
                         </div>
                     </span>
                 </div>
@@ -150,7 +148,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-credit-card" aria-hidden="true"></i>Purchases</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('Purchase_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Purchase_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -159,7 +157,6 @@
                             <a href="<?php echo site_url('Purchase_controller/PurchaseOrder')?>" data-title="PO">Purchase Orders</a>
                             <a href="<?php echo site_url('Purchase_controller/DirectGrn')?>" data-title="DG">Direct GRN</a>
                             <a href="<?php echo site_url('Purchase_controller/DirectInvoice')?>" data-title="DI">Direct Invoice</a>
-                            <a href="<?php echo site_url('Purchase_controller/BadDebtProcessing')?>" data-title="BD">Bad Debt Processing</a>
                             <a href="<?php echo site_url('Purchase_controller/SupplierInvoices')?>" data-title="SI">Supplier Invoices</a>
                             <a href="<?php echo site_url('Purchase_controller/PaymentsToSuppliers')?>" data-title="PS">Payments to Supplier</a>
                             <a href="<?php echo site_url('Purchase_controller/SupplierCreditNotes')?>" data-title="SC">Supplier Credit Notes</a>
@@ -172,7 +169,6 @@
                         <div>
                             <a href="<?php echo site_url('Purchase_controller/SupplierTransaction')?>" data-title="ST">Supplier Transaction</a>
                             <a href="<?php echo site_url('Purchase_controller/SupplierAllocation')?>" data-title="SA">Supplier Allocation</a>
-                            <a href="<?php echo site_url('Purchase_controller/CheckTransactions')?>" data-title="CT">Check Transactions</a>
                             
                         </div>
                     </span>
@@ -214,7 +210,7 @@
 
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('Products_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Products_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -257,7 +253,6 @@
                             <a href="#" data-title="IC">Item Categories</a>
                             <a href="#" data-title="IL">Inventory Locations</a>
                             <a href="#" data-title="IM">Inventory Movement Types</a>
-                            <a href="#" data-title="RL">Reorder Level</a>
                             <a href="#" data-title="SP">Sales Pricing</a>
                             <a href="#" data-title="PP">Purchasing Pricing</a>
                             <a href="#" data-title="SC">Standard Costs</a>
@@ -267,11 +262,11 @@
             </li>
 
             <!-- Class -->
-            <li>
+            <!-- <li>
                 <a href="#" class="menu-parent"><i class="fa fa-cubes" aria-hidden="true"></i>Class</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('Class_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php ?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -297,14 +292,14 @@
                         </div>
                     </span>
                 </div>
-            </li>
+            </li> -->
 
             <!-- Cash and GL -->
             <li>
                 <a href="#" class="menu-parent"><i class="fa fa-money" aria-hidden="true"></i>Cash and GL</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('Cash_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Cash_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -316,24 +311,19 @@
                             <a href="#" data-title="JE">Journal Entry</a>
                             <a href="#" data-title="BE">Budget Entry</a>
                             <a href="#" data-title="RB">Reconcile Bank Account</a>
-                            <a href="#" data-title="RC">Revenue / Costs Accruals</a>
                         </div>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="IQ">Inquiry</a>
                         <div>
-                            <a href="#" data-title="GF">GST Form 3</a>
-                            <a href="#" data-title="DR">Days Rules</a>
+                            <a href="#" data-title="GF">GST Form 5</a>
                             <a href="#" data-title="GL">GL</a>
-                            <a href="#" data-title="GD">GL Diagnostic Check</a>
                             <a href="#" data-title="BA">Bank Account</a>
-                            <a href="#" data-title="BD">Bank Diagnostic Check</a>
                             <a href="#" data-title="TX">Tax</a>
                             <a href="#" data-title="TB">Trial Balance</a>
                             <a href="#" data-title="BS">Balance Sheet Drilldown</a>
                             <a href="#" data-title="PL">Profit and Loss Drilldown</a>
-                            <a href="#" data-title="CB">Check Bank Transactions</a>
 
                         </div>
                     </span>
@@ -362,7 +352,6 @@
                             <a href="#" data-title="BP">Bank Payment Voucher</a>
                             <a href="#" data-title="BD">Bank Deposit Voucher</a>
                             <a href="#" data-title="BA">Bank Account Transfer Voucher</a>
-                            <a href="#" data-title="GJ">GL Journal Voucher</a>
                             <a href="#" data-title="BR">Bank Reconcile</a>
 
                         </div>
@@ -391,10 +380,10 @@
                 <a href="#" class="menu-parent"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Accountant's Area</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('Accountant_controller')?>" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Accountant_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
-                    <span>
+                   <!--  <span>
                         <a href="#" class="menu-sub-child" data-title="PJ">Process Journal Entry </a>
                     </span>
 
@@ -409,10 +398,10 @@
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="TB">Trial Balance Export</a>
-                    </span>
+                    </span> -->
 
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="MA">Mobile Accountant</a>
+                        <a href="#" class="" data-title="MA">Mobile Accountant</a>
                     </span>
                 </div>
             </li>
@@ -422,7 +411,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-cog" aria-hidden="true"></i>Setup</a>
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="menu-sub-child" data-title="DB">Dashboard</a>
+                        <a href="#" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
@@ -437,6 +426,8 @@
                             <a href="#" data-title="TX">Taxes</a>
                             <a href="#" data-title="SG">System and General GL Setup</a>
                             <a href="#" data-title="FY">Fiscal Years</a>
+                            <a href="#" data-title="ET">Expense Type</a>
+                            <a href="#" data-title="RT">Revenue Type</a>
 
                         </div>
                     </span>
@@ -460,7 +451,6 @@
                             <a href="#" data-title="VP">View or Print Transactions</a>
                             <a href="#" data-title="AD">Attach Documents</a>
                             <a href="#" data-title="AT">Audit Trail</a>
-                            <a href="#" data-title="FP">Fix Posting</a>
                             
                         </div>
                     </span>
