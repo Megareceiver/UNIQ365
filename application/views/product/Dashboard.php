@@ -3,7 +3,7 @@
 	<title>Dashboard</title>
 </head>
 <body>
-	<h1>Ini Dashboard Product</h1>
+	<!-- <h1>Ini Dashboard Product</h1>
 
 	<h3>Operations</h3>
 	<ul>
@@ -41,6 +41,6 @@
 		<li><a href="<?php echo site_url('Product_controller/SalesPricing') ?>">Sales Pricing</a></li>
 		<li><a href="<?php echo site_url('Product_controller/PurchasingPricing') ?>">Purchasing Pricing</a></li>
 		<li><a href="<?php echo site_url('Product_controller/StandardCosts') ?>">Standard Costs</a></li>
-	</ul>
+	</ul> -->
 </body>
 </html>

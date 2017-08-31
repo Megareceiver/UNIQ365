@@ -210,52 +210,52 @@
 
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('Products_controller')?>" class="" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Product_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>
                         <div>
-                            <a href="#" data-title="IL">Inventory Location Transfers</a>
-                            <a href="#" data-title="IA">Inventory Adjustments</a>
+                            <a href="<?php echo site_url('Product_controller/LocationTransfers')?>" data-title="IL">Inventory Location Transfers</a>
+                            <a href="<?php echo site_url('Product_controller/Adjustment')?>" data-title="IA">Inventory Adjustments</a>
                         </div>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="IQ">Inquiry</a>
                         <div>
-                            <a href="#" data-title="IM">Inventory Item Movements</a>
-                            <a href="#" data-title="IS">Inventory Item Status</a>
+                            <a href="<?php echo site_url('Product_controller/ItemMovements')?>" data-title="IM">Inventory Item Movements</a>
+                            <a href="<?php echo site_url('Product_controller/ItemStatus')?>" data-title="IS">Inventory Item Status</a>
                         </div>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="RP">Reports</a>
                         <div>
-                            <a href="#" data-title="IV">Inventory Valuation Report</a>
-                            <a href="#" data-title="IP">Inventory Planning Report</a>
-                            <a href="#" data-title="SC">Stock Check Sheets</a>
-                            <a href="#" data-title="IP">Inventory Sales Report</a>
-                            <a href="#" data-title="GV">GNL Valuation Report</a>
-                            <a href="#" data-title="IP">Inventory Purchasing Report</a>
-                            <a href="#" data-title="IM">Inventory Movement Report</a>
-                            <a href="#" data-title="CI">Costed Inventory Movement Report</a>
-                            <a href="#" data-title="IS">Item Sales Summary Report</a>
+                            <a href="<?php echo site_url('Product_controller/InValuationReports')?>" data-title="IV">Inventory Valuation Report</a>
+                            <a href="<?php echo site_url('Product_controller/InPlanningReports')?>" data-title="IP">Inventory Planning Report</a>
+                            <a href="<?php echo site_url('Product_controller/StockCheckSheets')?>" data-title="SC">Stock Check Sheets</a>
+                            <a href="<?php echo site_url('Product_controller/InSalesReports')?>" data-title="IP">Inventory Sales Report</a>
+                            <a href="<?php echo site_url('Product_controller/ValuationReports')?>" data-title="GV">GNL Valuation Report</a>
+                            <a href="<?php echo site_url('Product_controller/InPurchasing')?>" data-title="IP">Inventory Purchasing Report</a>
+                            <a href="<?php echo site_url('Product_controller/CostedInMovReport')?>" data-title="IM">Inventory Movement Report</a>
+                            <a href="<?php echo site_url('Product_controller/CostedInMovReport')?>" data-title="CI">Costed Inventory Movement Report</a>
+                            <a href="<?php echo site_url('Product_controller/ItemSalesSummaryReport')?>" data-title="IS">Item Sales Summary Report</a>
                         </div>
                     </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="HK">Housekeeping</a>
                         <div>
-                            <a href="#" data-title="IT">Items</a>
-                            <a href="#" data-title="FI">Foreign Item Codes</a>
-                            <a href="#" data-title="SK">Sales Kits</a>
-                            <a href="#" data-title="IC">Item Categories</a>
-                            <a href="#" data-title="IL">Inventory Locations</a>
-                            <a href="#" data-title="IM">Inventory Movement Types</a>
-                            <a href="#" data-title="SP">Sales Pricing</a>
-                            <a href="#" data-title="PP">Purchasing Pricing</a>
-                            <a href="#" data-title="SC">Standard Costs</a>
+                            <a href="<?php echo site_url('Product_controller/Items')?>" data-title="IT">Items</a>
+                            <a href="<?php echo site_url('Product_controller/ForeignItemCodes')?>" data-title="FI">Foreign Item Codes</a>
+                            <a href="<?php echo site_url('Product_controller/SalesKits')?>" data-title="SK">Sales Kits</a>
+                            <a href="<?php echo site_url('Product_controller/ItemCategories')?>" data-title="IC">Item Categories</a>
+                            <a href="<?php echo site_url('Product_controller/InventoryLocations')?>" data-title="IL">Inventory Locations</a>
+                            <a href="<?php echo site_url('Product_controller/InMovementTypes')?>" data-title="IM">Inventory Movement Types</a>
+                            <a href="<?php echo site_url('Product_controller/SalesPricing')?>" data-title="SP">Sales Pricing</a>
+                            <a href="<?php echo site_url('Product_controller/PurchasingPricing')?>" data-title="PP">Purchasing Pricing</a>
+                            <a href="<?php echo site_url('Product_controller/StandardCosts')?>" data-title="SC">Standard Costs</a>
                         </div>
                     </span>
                 </div>

@@ -1,106 +1,137 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Products_controller extends CI_Controller {
+class Product_controller extends CI_Controller {
 
+	// $title['title'] = "title name";
+ 	// $this->template->load('Template','/directory',$title);
 	public function index()
 	{
-		$this->load->view('/products/dashboard');
+		$title['title'] = "Dashboard Product";
+        $this->template->load('Template','/product/Dashboard',$title);
+
 	}
 
 
 	//Operations
 
 	public function LocationTransfers(){
-		$this->load->view('/products/Operations/LocationTransfers');
+		$title['title'] = "Location Transfer";
+		$this->template->load('Template','/product/Operations/LocationTransfers',$title);
 	}
 
 	public function Adjustment(){
-		$this->load->view('/products/Operations/Adjustment');
+		$title['title'] = "inventory Adjustments";
+		$this->template->load('Template','/Product/Operations/Adjustment',$title);
 	}
 
 	//Inquiry
 	public function ItemMovements(){
-		$this->load->view('/products/Inquiry/ItemMovements');
+		$title['title'] = "Inventory Item Movements";
+		$this->template->load('Template','/Product/Inquiry/ItemMovements',$title);
 	}
 
 	public function ItemStatus(){
-		$this->load->view('/products/Inquiry/ItemStatus');
+		$title['title'] = "Inventory Item Status";
+		$this->template->load('Template','/Product/Inquiry/ItemStatus',$title);
 	}
 
 	//Reports
 	public function InValuationReports(){
-		$this->load->view('/products/Reports/InValuationReports');
+		$title['title'] = "Inventory Valuation Report";
+		$this->template->load('Template','/Product/Reports/InValuationReports',$title);
 	}
 	
 	public function InPlanningReports(){
-		$this->load->view('/products/Reports/InPlanningReports');
+		$title['title'] = "Inventory Planning Report";
+		$this->template->load('Template','/Product/Reports/InPlanningReports',$title);
 	}
 
 	public function StockCheckSheets(){
-		$this->load->view('/products/Reports/StockCheckSheets');
+		$title['title'] = "Stock Check Sheet";
+		$this->template->load('Template','/Product/Reports/StockCheckSheets',$title);
 	}
 
 	public function InSalesReports(){
-		$this->load->view('/products/Reports/InSalesReports');
+		$title['title'] = "Inventory Sales Report";
+		$this->template->load('Template','/Product/Reports/InSalesReports',$title);
 	}
 
 	public function ValuationReports(){
-		$this->load->view('/products/Reports/ValuationReports');
+		$title['title'] = "GNL Valuation Report";
+		$this->template->load('Template','/Product/Reports/ValuationReports',$title);
 	}
 
 	public function InPurchasing(){
-		$this->load->view('/products/Reports/InPurchasing');
+		$title['title'] = "Inventory Purchasing Report";
+		$this->template->load('Template','/Product/Reports/InPurchasing',$title);
 	}
 
 	public function CostedInMovReport(){
-		$this->load->view('/products/Reports/CostedInMovReport');
+		$title['title'] = "Costed Inventory Movement Report";
+		$this->template->load('Template','/Product/Reports/CostedInMovReport',$title);
 	}
 
-	public function ItemSlaesSummaryReport(){
-		$this->load->view('/products/Reports/ItemSlaesSummaryReport');
+	public function ItemSalesSummaryReport(){
+		$title['title'] = "Item Sales Summary Report";
+		$this->template->load('Template','/Product/Reports/ItemSalesSummaryReport',$title);
 	}
 
 
 	//Housekeeping
 	public function Items(){
-		$this->load->view('/products/Reports/Items');
+		$title['title'] = "Items";
+		$this->template->load('Template','/Product/Housekeeping/Items',$title);
 	}
 
 	public function ForeignItemCodes(){
-		$this->load->view('/products/Reports/ForeignItemCodes');
+		$title['title'] = "Foreign Item Codes";
+		$this->template->load('Template','/Product/Housekeeping/ForeignItemCodes',$title);
 	}
 
 	public function SalesKits(){
-		$this->load->view('/products/Reports/SalesKits');
+		$title['title'] = "Sales Kits";
+		$this->template->load('Template','/Product/Housekeeping/SalesKits',$title);
 	}
 
 	public function ItemCategories(){
-		$this->load->view('/products/Reports/ItemCategories');
+		$title['title'] = "Item Categories";
+		$this->template->load('Template','/Product/Housekeeping/ItemCategories',$title);
 	}
 
 	public function InMovementTypes(){
-		$this->load->view('/products/Reports/InMovementTypes');
+		$title['title'] = "Inventory Movement Types";
+		$this->template->load('Template','/Product/Housekeeping/InMovementTypes',$title);
 	}
 
 	public function UnitsMeasure(){
-		$this->load->view('/products/Reports/UnitsMeasure');
+		$title['title'] = "Units Measure";
+		$this->template->load('Template','/Product/Housekeeping/UnitsMeasure',$title);
 	}
 
 	public function ReordeLevels(){
-		$this->load->view('/products/Reports/ReordeLevels');
+		$title['title'] = "ReordeLevels";
+		$this->template->load('Template','/Product/Housekeeping/ReordeLevels',$title);
 	}
 
 	public function SalesPricing(){
-		$this->load->view('/products/Reports/SalesPricing');
+		$title['title'] = "Sales Pircing";
+		$this->template->load('Template','/Product/Housekeeping/SalesPricing',$title);
 	}
 
 	public function PurchasingPricing(){
-		$this->load->view('/products/Reports/PurchasingPricing');
+		$title['title'] = "Purchasing Pircing";
+		$this->template->load('Template','/Product/Housekeeping/PurchasingPricing',$title);
+	}
+
+	public function InventoryLocations(){
+		$title['title'] = "Inventory Locations";
+		$this->template->load('Template','/Product/Housekeeping/InventoryLocations',$title);
 	}
 
 	public function StandardCosts(){
-		$this->load->view('/products/Reports/StandardCosts');
+		$title['title'] = "Standard Costs";
+		$this->template->load('Template','/Product/Housekeeping/StandardCosts',$title);
 	}
 
 }

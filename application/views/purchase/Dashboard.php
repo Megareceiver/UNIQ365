@@ -1,6 +1,6 @@
 <center><h1>Dashboard Purchase</h1></center>
 
-<div>
+<!-- <div>
 	- Operations <br />
 	<a href="<?php echo site_url('Purchase_controller/PurchaseOrder') ?>">Purchase Order</a><br />
 	<a href="<?php echo site_url('Purchase_controller/DirectGrn') ?>">Direct GRN</a><br />
@@ -37,4 +37,4 @@
 <div>
 	- Houskeeping <br />
 	<a href="<?php echo site_url('Purchase_controller/SupplierMaintenance') ?>">Suppliers Maintenance</a><br />
-</div>
+</div> -->

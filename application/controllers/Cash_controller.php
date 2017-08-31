@@ -6,7 +6,7 @@ class Cash_controller extends CI_Controller {
 	public function index()
 	{
 		$title['title'] = "Dashboard Cash and GL";
-        $this->template->load('Template','/cash/Dashboard',$title);
+        $this->template->load('Template','/cash_and_gl/Dashboard',$title);
 
 	}
 }
