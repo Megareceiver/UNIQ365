@@ -208,9 +208,12 @@
 
             <!-- Products -->
             <li>
-                <a href="<?php echo site_url('Product_controller')?>" data-title="DB" class="menu-parent"><i class="fa fa-list-alt" aria-hidden="true"></i>Products</a>
+                <a href="#" class="menu-parent"><i class="fa fa-list-alt" aria-hidden="true"></i>Products</a>
 
                 <div class="menu-child">
+                    <span>
+                        <a href="<?php echo site_url('Product_controller')?>" class="" data-title="DB">Dashboard</a>
+                    </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>
@@ -295,8 +298,12 @@
 
             <!-- Cash and GL -->
             <li>
-                <a href="<?php echo site_url('Cash_controller')?>" data-title="DB" class="menu-parent"><i class="fa fa-money" aria-hidden="true"></i>Cash and GL</a>
+                <a href="#" class="menu-parent"><i class="fa fa-money" aria-hidden="true"></i>Cash and GL</a>
                 <div class="menu-child">
+                    <span>
+                        <a href="<?php echo site_url('Cash_controller')?>" class="" data-title="DB">Dashboard</a>
+                    </span>
+
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>
                         <div>
@@ -374,9 +381,6 @@
             <li>
                 <a href="#" class="menu-parent"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Accountant's Area</a>
                 <div class="menu-child">
-                    <span>
-                        <a href="<?php echo site_url('Accountant_controller')?>" class="" data-title="DB">Dashboard</a>
-                    </span>
 
                    <!--  <span>
                         <a href="#" class="menu-sub-child" data-title="PJ">Process Journal Entry </a>
@@ -405,9 +409,6 @@
             <li>
                 <a href="#" class="menu-parent"><i class="fa fa-cog" aria-hidden="true"></i>Setup</a>
                 <div class="menu-child">
-                    <span>
-                        <a href="#" class="" data-title="DB">Dashboard</a>
-                    </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="CP">Company</a>
