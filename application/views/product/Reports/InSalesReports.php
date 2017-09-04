@@ -1,9 +1,1 @@
-<html>
-<head>
-	<title>InSalesReports</title>
-</head>
-<body>
-	<h1>Inventory Sales Reports</h1>
-
-</body>
-</html>
+<center><h1>Under Construction</h1></center>

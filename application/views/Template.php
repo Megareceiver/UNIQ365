@@ -208,12 +208,9 @@
 
             <!-- Products -->
             <li>
-                <a href="#" class="menu-parent"><i class="fa fa-list-alt" aria-hidden="true"></i>Products</a>
+                <a href="<?php echo site_url('Product_controller')?>" data-title="DB" class="menu-parent"><i class="fa fa-list-alt" aria-hidden="true"></i>Products</a>
 
                 <div class="menu-child">
-                    <span>
-                        <a href="<?php echo site_url('Product_controller')?>" class="" data-title="DB">Dashboard</a>
-                    </span>
 
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>

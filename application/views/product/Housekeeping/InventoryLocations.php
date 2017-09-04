@@ -1,9 +1,1 @@
-<html>
-<head>
-	<title>Units Measure</title>
-</head>
-<body>
-	<h1>Inventory Locations</h1>
-
-</body>
-</html>
+<center><h1>Under Construction</h1></center>

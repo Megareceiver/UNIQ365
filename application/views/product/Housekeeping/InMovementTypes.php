@@ -1,9 +1,1 @@
-<html>
-<head>
-	<title>Inventory Movement Types</title>
-</head>
-<body>
-	<h1>Inventory Movement Types</h1>
-
-</body>
-</html>
+<center><h1>Under Construction</h1></center>
