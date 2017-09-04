@@ -8,7 +8,7 @@ class Product_controller extends CI_Controller {
 	public function index()
 	{
 		$title['title'] = "Dashboard Product";
-        $this->template->load('Template','/product/Dashboard',$title);
+        $this->template->load('Template','/product/Dashboard.php',$title);
 
 	}
 
