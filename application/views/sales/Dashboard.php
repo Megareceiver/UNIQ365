@@ -6,18 +6,30 @@
 </br>
 </br>
 
-<div style="width: 50%; float: left;">
+<div style="padding: 5; width: 45%; float: left;">
     <div class="uniq-table-wrapped" id="Customer">
        
     </div>
 </div>
 
-<div style="width: 50%; float: right">
+<div style="padding: 5; width: 45%; float: right">
     <canvas id="chart"></canvas>
 </div>
 
 </br>
 </br>
+
+<div style="padding: 5; width: 45%; float: left;">
+    <canvas id="chartLine"></canvas>
+   
+</div>
+
+<div style="padding: 5; width: 45%; float: right">
+     <div class="uniq-table-wrapped" id="Sales">
+       
+    </div>
+</div>
+
    <!--  <script src="assets/js/Chart.bundle.js"></script>
     <script src="assets/js/Chart.js"></script> -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -43,6 +55,23 @@ var Customer = {
         ['28092016', '4,288.00'],
         ['C1000', '1,445.00'],
         ['Y1 Company', '4'],
+    ]
+};
+
+var Sales = {
+    head : ['Week End','Gross Sales'],
+    body : [
+        ['2016-01-07', '200.00'],
+        ['2016-03-16', '1,996.81'],
+        ['2016-03-31', '8,100.00'],
+        ['2016-04-04', '4,000.00'],
+        ['2016-01-11', '1,060.00'],
+        ['2016-01-19', '21,735.48'],
+        ['2016-09-01', '930.00'],
+        ['2016-01-28', '6,898.20'],
+        ['2016-10-06', '4,450.00'],
+        ['22016-11-01','5,069.98']
+   
     ]
 };
 
@@ -93,6 +122,28 @@ var tabelCustomer =
     '</table>';
 $("#Customer").append(tabelCustomer);
 
+var tabelSales =
+    '<table cellpadding="0" cellspacing="0">'+
+        '<thead>'+
+        '<tr>';
+        for(var a =0; a < Sales.head.length; a++){
+            tabelSales = tabelSales + '<td>'+Sales.head[a]+'</td>';
+        }
+        tabelSales = tabelSales +
+        '</tr>'+
+        '</thead>'+
+        '<tbody>';
+        for(var b = 0; b < Sales.body.length; b++){
+            tabelSales = tabelSales + '<tr>';
+            for (var c = 0; c < Sales.body[b].length; c++){
+                tabelSales = tabelSales + '<td>'+ Sales.body[b][c]; + '</td>';
+            }
+            tabelSales = tabelSales + '</tr>';
+        }  
+        tabelSales = tabelSales +
+        '</tbody>'+
+    '</table>';
+$("#Sales").append(tabelSales);
 
 /*chart script*/
 new Chart(document.getElementById("chart"), {
@@ -102,13 +153,32 @@ new Chart(document.getElementById("chart"), {
       datasets: [{
         label: "Amount",
         backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-        data: [4,288.00,1,445.00,4]
+        data: ['4.288','1.445','4']
       }]
     },
     options: {
       title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050'
+        text: 'Customer'
+      }
+    }
+});
+
+new Chart(document.getElementById("chartLine"), {
+   type: 'line',
+    data: {
+      labels: ['28092016','C1000','Y1 Company'],
+      datasets: [{
+        label: "Amount",
+        backgroundColor: ["#3e95cd"],
+        data: ['4.288','1.445','4'],
+        fill: false
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Customer'
       }
     }
 });
