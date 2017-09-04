@@ -48,8 +48,9 @@ textarea {
   color: #333;
   display: block;
   margin: 0 10px 25px 10px;
-  background: #0b5383;
-  color: #fff;
+  /* background: #0b5383; temporary*/
+  /* color: #fff; temporary*/
+  border: 1px solid #0b5383; /*temporary*/
   height: 75px;
   padding: 15px 15px 15px 60px;
   -webkit-border-radius: 5px;
@@ -83,7 +84,8 @@ textarea {
   transition: all 0.2s ease-out 0s;
 }
 .uniq-dashboard-list li a:hover {
-  background: #0d2331;
+  /* background: #0d2331; temporary*/
+  background: #eee; /*temporary*/
 }
 .uniq-dashboard-list li a:hover i {
   margin-top: -30px;
