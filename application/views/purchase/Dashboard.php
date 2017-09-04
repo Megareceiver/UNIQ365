@@ -57,7 +57,7 @@
 
 <br />
 
-<div class="uniq-table-wrapped">
+<div class="uniq-table-wrapped" style="width: 50%; float: left;">
     <table cellpadding="0" cellspacing="0">
         <thead>
             <td colspan="8"><h3><i class="fa fa-table" aria-hidden="true"></i> Top 10 Suppliers</h3></td>          
@@ -111,81 +111,78 @@
     </table>
 </div>
 
-<br />
-
-<div class="uniq-table-wrapped">
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <td colspan="8"><h3><i class="fa fa-table" aria-hidden="true"></i> Top 10 Suppliers</h3></td>          
-        </thead>
-        <thead>
-        	<tr>
-	            <td>#</td>
-	            <td><center>Date</center></td>
-	            <td><center>Due Date</center></td>
-	            <td><center>Supllier</center></td>
-	            <td><center>Curency</center></td>
-	            <td><center>Total</center></td>
-	            <td><center>Remainder</center></td>
-	            <td><center>Days</center></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-		        <td>01</td>
-		        <td>31-12-2014</td>
-		        <td>31-12-2014</td>
-		        <td>60 S1 Company</td>
-		        <td>MYR</td>
-		        <td>900.00</td>
-		        <td>900.00</td>
-		        <td>974</td>
-            </tr>
-
-            <tr>
-		        <td>02</td>
-		        <td>31-12-2014</td>
-		        <td>31-12-2014</td>
-		        <td>60 S1 Company</td>
-		        <td>MYR</td>
-		        <td>900.00</td>
-		        <td>900.00</td>
-		        <td>974</td>
-            </tr>
-
-            <tr>
-		        <td>03</td>
-		        <td>31-12-2014</td>
-		        <td>31-12-2014</td>
-		        <td>60 S1 Company</td>
-		        <td>MYR</td>
-		        <td>900.00</td>
-		        <td>900.00</td>
-		        <td>974</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<br />
-
-<div class="uniq-table-wrapped" style="width: 50%;">
+<div  style="width: 45%; float: right; border-spacing: 2;">
         <canvas id="bar-chart"></canvas>
 </div>
 
-<div class="uniq-table-wrapped" style="width: 50%;">
+<br />
+<div style="width: 45%; float: left;">
         <canvas id="line-chart"></canvas>
+</div>
+
+<div class="uniq-table-wrapped" style="widows: 50%; float: right;">
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <td colspan="8"><h3><i class="fa fa-table" aria-hidden="true"></i> Top 10 Suppliers</h3></td>          
+        </thead>
+        <thead>
+        	<tr>
+	            <td>#</td>
+	            <td><center>Date</center></td>
+	            <td><center>Due Date</center></td>
+	            <td><center>Supllier</center></td>
+	            <td><center>Curency</center></td>
+	            <td><center>Total</center></td>
+	            <td><center>Remainder</center></td>
+	            <td><center>Days</center></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+		        <td>01</td>
+		        <td>31-12-2014</td>
+		        <td>31-12-2014</td>
+		        <td>60 S1 Company</td>
+		        <td>MYR</td>
+		        <td>900.00</td>
+		        <td>900.00</td>
+		        <td>974</td>
+            </tr>
+
+            <tr>
+		        <td>02</td>
+		        <td>31-12-2014</td>
+		        <td>31-12-2014</td>
+		        <td>60 S1 Company</td>
+		        <td>MYR</td>
+		        <td>900.00</td>
+		        <td>900.00</td>
+		        <td>974</td>
+            </tr>
+
+            <tr>
+		        <td>03</td>
+		        <td>31-12-2014</td>
+		        <td>31-12-2014</td>
+		        <td>60 S1 Company</td>
+		        <td>MYR</td>
+		        <td>900.00</td>
+		        <td>900.00</td>
+		        <td>974</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 
 <script type="text/javascript">
 	new Chart(document.getElementById("bar-chart"), {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
       labels: ["28092016", "Jess", "QQ USA CORPORATION", "Apple 1234", "Y1 Company"],
       datasets: [
         {
-          label: "Population (millions)",
+          label: "Top 10 Suppliers",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
           data: [195634.00,140708.00,126000.00,121150.00, 50040.00]
         }
@@ -195,7 +192,7 @@
       legend: { display: false },
       title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050'
+        text: 'Top 10 Suppliers'
       }
     }
 });
