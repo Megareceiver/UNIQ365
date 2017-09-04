@@ -13,11 +13,11 @@
             <div class="uniq-logo">
                 <img src="assets/image/uniq-logo-login.png"/>
                 <br><br><br>
-                <p lang="login-1">- Welcome To -</p>
+                <p lang="login-0">- Welcome To -</p>
                 <strong>Uniq Synergy Pte Ltd</strong>
             </div>
             <form action=<?php echo site_url('Dashboard'); ?>>
-                <strong lang="login-2">Login Form</strong>
+                <strong lang="login-1">Login Form</strong>
                 <br><br><br>
                 <div class="uniq-field">
                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -28,10 +28,10 @@
                     <input type="password" placeholder="Password"/>
                 </div>
                 <div class="uniq-field button">
-                    <input type="submit" value="Login Now" lang="login-3">
+                    <input type="submit" value="Login Now" lang="btnlog-1">
                 </div>
                 <br><br>
-                <p lang="login-4">Forgot Password | Help ?</p>
+                <p lang="login-2">Forgot Password | Help ?</p>
             </form>
         </div>
         <script type="text/javascript">
@@ -46,11 +46,22 @@
                 });
             });
 
+            
 
-            $('[lang="login-1"]').html('Selamat Datang Di');
-            $('[lang="login-2"]').html('Halaman Login');
-            $('[lang="login-3"]').val('Masuk');
-            $('[lang="login-4"]').html('Lupa Password | Bantuan?');
+           
+            $('[lang="btnlog-1"]').val('Masuk');
+
+            var lang = [{ 
+                head : [
+                "Selamat Datang Di",
+                "Halaman Login",
+                "Lupa Password | Bantuan?"
+                ]}
+            ];
+            console.log(lang[0].head.length);
+            for (var a = 0; a < lang[0].head.length; a++){
+                $('[lang="login-'+a+'"]').html(lang[0].head[a]);
+            }
         </script>
     </body>
 </html>
