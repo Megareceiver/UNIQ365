@@ -68,7 +68,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>Sales</a>
                 <div class="menu-child">
                     <span>
-                        <a href="<?php echo site_url('')?>Sales_controller" class="" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Sales_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>
