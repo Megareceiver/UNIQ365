@@ -413,7 +413,7 @@
                 <a href="#" class="menu-parent"><i class="fa fa-cog" aria-hidden="true"></i>Setup</a>
                 <div class="menu-child">
                     <span>
-                        <a href="#" class="" data-title="DB">Dashboard</a>
+                        <a href="<?php echo site_url('Setup_controller')?>" class="" data-title="DB">Dashboard</a>
                     </span>
 
                     <span>

@@ -5,7 +5,8 @@ class Setup_controller extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('/setup/dashboard');
+		$title['title'] = "Dashboard Sales";
+        $this->template->load('Template','/setup/dashboard',$title);
 	}
 
 

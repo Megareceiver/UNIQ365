@@ -1,9 +1,1 @@
-<html>
-<head>
-	<title>Adjustment</title>
-</head>
-<body>
-	<h1>Ini Adjustment</h1>
-
-</body>
-</html>
+<center><h1>Under Construction</h1></center>

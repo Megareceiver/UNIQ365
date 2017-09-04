@@ -1,9 +1,1 @@
-<html>
-<head>
-	<title>Items</title>
-</head>
-<body>
-	<h1>Items</h1>
-
-</body>
-</html>
+<center><h1>Under Construction</h1></center>

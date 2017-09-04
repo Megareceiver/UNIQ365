@@ -1,9 +1,1 @@
-<html>
-<head>
-	<title>CostedInMovReport</title>
-</head>
-<body>
-	<h1>Costed Inventory Movement Report</h1>
-
-</body>
-</html>
+<center><h1>Under Construction</h1></center>
