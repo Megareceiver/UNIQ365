@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Uniq Sinergy</title>
+        <meta name="viewport" content="width=640">
         <link rel="icon" type="/image/x-icon" href="assets/image/favicon.ico" /> 
         <link type="text/css" rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"/>
         <link type="text/css" rel="stylesheet" href="assets/css/uniq-login.css"/>
