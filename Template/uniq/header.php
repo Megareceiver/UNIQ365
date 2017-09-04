@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Uniq Sinergy</title>
+        <title>Uniq Synergy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0;">
         
         <link rel="icon" type="/image/x-icon" href="assets/image/favicon.ico" /> 
@@ -198,6 +198,61 @@
                     <span>
                         <a href="#" class="menu-sub-child" data-title="HK">Housekeeping</a>
                         <div>
+                            <a href="#" data-title="FN">Field Name</a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li class="left-menu">
+                <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>LEFT MENU</a>
+                <div class="menu-child">
+                    <span>
+                        <a href="#" class="menu-sub-child" data-title="OP">Operations</a>
+                        <div>
+                            <a href="#" data-title="SQ">Sales Qoutation</a>
+                            <a href="#" data-title="SO">Sales Order</a>
+                            <a href="#" data-title="DD">Direct Delivery</a>
+                            <a href="#" data-title="DI">Direct Invoice</a>
+                            <a href="#" data-title="SI">Sales Invoice</a>
+                            <a href="#" data-title="DO">Dilevery Against Sales Order</a>
+                            <a href="#" data-title="DA">Dilevery Against Sales Delivery</a>
+                            <a href="#" data-title="CD">Copy Delivery</a>
+                            <a href="#" data-title="CI">Copy Invoice</a>
+                            <a href="#" data-title="CP">Create & Print Recurring Invoice</a>
+                            <a href="#" data-title="CP">Customer Payments</a>
+                            <a href="#" data-title="CN">Customer Credit Notes</a>
+                            <a href="#" data-title="AC">Allocate Customer Payments or Credit Notes</a>
+                        </div>
+                    </span>
+                    <span>
+                        <a href="#" class="menu-sub-child" data-title="IQ">inquiry</a>
+                        <div>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
+                        </div>
+                    </span>
+                    <span>
+                        <a href="#" class="menu-sub-child" data-title="RP">Reports</a>
+                        <div>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
+                        </div>
+                    </span>
+                    <span>
+                        <a href="#" class="menu-sub-child" data-title="DP">Document Printing</a>
+                        <div>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
+                        </div>
+                    </span>
+                    <span>
+                        <a href="#" class="menu-sub-child" data-title="HK">Housekeeping</a>
+                        <div>
+                            <a href="#" data-title="FN">Field Name</a>
+                            <a href="#" data-title="FN">Field Name</a>
                             <a href="#" data-title="FN">Field Name</a>
                         </div>
                     </span>

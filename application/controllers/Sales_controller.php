@@ -42,7 +42,7 @@ class Sales_controller extends CI_Controller {
 	public function InvoiceAgainstSalesDelivery()
 	{
 		$title['title'] = "Invoice Against Sales Delivery";
-        $this->template->load('Template','/sales/Operations/InvoiceAgainstSalesDelivery',$title);
+        $this->template->load('Template','/sales/Operations/InvoiceAgainsSalesDelivery',$title);
 	}
 
 	public function CopyDelivery()
@@ -165,7 +165,7 @@ class Sales_controller extends CI_Controller {
 	public function PrintSalesOrders()
 	{
 		$title['title'] = "Print Sales Orders";
-        $this->template->load('Template','/sales/DocumentPrinting/PrintSalesOrders',$title);
+        $this->template->load('Template','/sales/DocumentPrinting/PrintSalesOrder',$title);
 	}
 
 	public function PrintSalesQuotation()

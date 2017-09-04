@@ -105,93 +105,6 @@
                     </a>
                 </li>
             </ul>
-<!--
-            <h1><i class="fa fa-file-text-o" aria-hidden="true"></i> Form Style</h1>
-            <form class="uniq-form">
-                <ul>
-                    <li style="max-width:500px;">
-                        <label>Text</label>
-                        <em>
-                            <input type="text" placeholder="Type here..."/>
-                        </em>
-                        <div class="uniq-error">
-                            <span>Ups, error message here!</span>
-                        </div>
-                    </li>
-                    <li style="max-width:500px;">
-                        <label>Checkbox</label>
-                        <em class="checkbox">
-                            <input id="option-1" type="checkbox" name="field" value="option">
-                            <label for="option-1">Value 1</label>
-                        </em>
-                        <em class="checkbox">
-                            <input id="option-2" type="checkbox" name="field" value="option">
-                            <label for="option-2">Value 2</label>
-                        </em>
-                        <div class="uniq-error">
-                            <span>Ups, error message here!</span>
-                        </div>
-                    </li>
-                    <li style="max-width:500px;">
-                        <label>Radio</label>
-                        <em class="radio">
-                            <input id="radio-1" type="radio" name="field-radio" value="option">
-                            <label for="radio-1">Value 1</label>
-                        </em>
-                        <em class="radio">
-                            <input id="radio-2" type="radio" name="field-radio" value="option">
-                            <label for="radio-2">Value 2</label>
-                        </em>
-                        <div class="uniq-error">
-                            <span>Ups, error message here!</span>
-                        </div>
-                    </li>
-                    <li style="max-width:500px;">
-                        <label>Time & Date</label>
-                        <em>
-                            <input type="text" id="start_dt" class="datepicker" placeholder="Date & Time"/>
-                        </em>
-                        <div class="uniq-error">
-                            <span>Ups, error message here!</span>
-                        </div>
-                    </li>
-                    <li style="max-width:500px;">
-                        <label>Select</label>
-                        <em>
-                            <select>
-                                <option selected>- Choose One -</option>
-                                <option>- Field here -</option>
-                                <option>- Field here -</option>
-                                <option>- Field here -</option>
-                            </select>
-                        </em>
-                        <div class="uniq-error">
-                            <span>Ups, error message here!</span>
-                        </div>
-                    </li>
-                    <li style="max-width:500px;">
-                        <label>Textarea</label>
-                        <em>
-                            <textarea placeholder="Type here..."></textarea>
-                        </em>
-                        <div class="uniq-error">
-                            <span>Ups, error message here!</span>
-                        </div>
-                    </li>
-                    <li>
-                        <input class="uniq-button" type="button" value="Button">
-                        <input class="uniq-button" type="button" value="Error" id="b-error">
-                        <input class="uniq-button disable" type="button" value="Disabled" disabled>
-                        <input class="uniq-button" type="button" value="Alert" id="b-alert">
-                        <br>
-                        <input class="uniq-button" type="button" value="Delete" id="b-delete">
-                        <input class="uniq-button" type="button" value="Success" id="b-success">
-                        <input class="uniq-button" type="button" value="Loading" id="b-loading">
-                        <input class="uniq-button" type="button" value="Popup" id="b-popup">
-                    </li>
-                </ul>
-            </form>
--->
             <h1><i class="fa fa-file-text-o" aria-hidden="true"></i> Modify Form Style</h1>
             <form class="uniq-form">
                 <ul>
@@ -374,6 +287,92 @@
                     </tr>
                 </table>
             </div>
+            <br><br>
+            <h1><i class="fa fa-address-book-o" aria-hidden="true"></i> Special Tab</h1>
+            <div class="uniq-tab-special">
+                <form>
+                    <div class="uniq-tab-nav">
+                        <a href="#tab-1" class="active">Tab 1</a>
+                        <a href="#tab-2">Tab 2</a>
+                        <a href="#tab-3">Tab 3</a>
+                        <a href="#tab-4">Tab 4</a>
+                    </div>
+                    <div class="uniq-tab-content">
+                        <section id="tab-1">
+                            <em class="checkbox">
+                                <input id="opt-1" type="checkbox" name="field" value="option">
+                                <label for="opt-1"><i class="fa fa-check animated"></i> Tab 1 Option 1</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-2" type="checkbox" name="field" value="option">
+                                <label for="opt-2"><i class="fa fa-check animated"></i> Tab 1 Option 2</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-3" type="checkbox" name="field" value="option">
+                                <label for="opt-3"><i class="fa fa-check animated"></i> Tab 1 Option 3</label>
+                            </em>
+                        </section>
+                        <section id="tab-2" class="hide">
+                            <em class="checkbox">
+                                <input id="opt-4" type="checkbox" name="field" value="option">
+                                <label for="opt-4"><i class="fa fa-check animated"></i> Tab 2 Option 1</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-5" type="checkbox" name="field" value="option">
+                                <label for="opt-5"><i class="fa fa-check animated"></i> Tab 2 Option 2</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-6" type="checkbox" name="field" value="option">
+                                <label for="opt-6"><i class="fa fa-check animated"></i> Tab 2 Option 3</label>
+                            </em>
+                        </section>
+                        <section id="tab-3" class="hide">
+                            <em class="checkbox">
+                                <input id="opt-7" type="checkbox" name="field" value="option">
+                                <label for="opt-7"><i class="fa fa-check animated"></i> Tab 3 Option 1</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-8" type="checkbox" name="field" value="option">
+                                <label for="opt-8"><i class="fa fa-check animated"></i> Tab 3 Option 2</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-9" type="checkbox" name="field" value="option">
+                                <label for="opt-9"><i class="fa fa-check animated"></i> Tab 3 Option 3</label>
+                            </em>
+                        </section>
+                        <section id="tab-4" class="hide">
+                            <em class="checkbox">
+                                <input id="opt-10" type="checkbox" name="field" value="option">
+                                <label for="opt-10"><i class="fa fa-check animated"></i> Tab 4 Option 1</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-11" type="checkbox" name="field" value="option">
+                                <label for="opt-11"><i class="fa fa-check animated"></i> Tab 4 Option 2</label>
+                            </em>
+                            <em class="checkbox">
+                                <input id="opt-12" type="checkbox" name="field" value="option">
+                                <label for="opt-12"><i class="fa fa-check animated"></i> Tab 4 Option 3</label>
+                            </em>
+                        </section>
+                    </div>
+                </form>
+            </div>
+            <br><br>
+            <h1><i class="fa fa-table" aria-hidden="true"></i> Grid</h1>
+            <div class="uniq-col col-2"><div class="container">1</div></div>
+            <div class="uniq-col col-2"><div class="container">2</div></div><br><br>
+            <div class="uniq-col col-3"><div class="container">1</div></div>
+            <div class="uniq-col col-3"><div class="container">2</div></div>
+            <div class="uniq-col col-3"><div class="container">3</div></div><br><br>
+            <div class="uniq-col col-4"><div class="container">1</div></div>
+            <div class="uniq-col col-4"><div class="container">2</div></div>
+            <div class="uniq-col col-4"><div class="container">3</div></div>
+            <div class="uniq-col col-4"><div class="container">4</div></div><br><br>
+            <div class="uniq-col col-5"><div class="container">1</div></div>
+            <div class="uniq-col col-5"><div class="container">2</div></div>
+            <div class="uniq-col col-5"><div class="container">3</div></div>
+            <div class="uniq-col col-5"><div class="container">4</div></div>
+            <div class="uniq-col col-5"><div class="container">5</div></div>
             <!-- content end here -->
         </div> 
     </div>

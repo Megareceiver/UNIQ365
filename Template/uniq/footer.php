@@ -1,9 +1,6 @@
     <script type="text/javascript" src="assets/js/datepicker.js"></script>
     <script type="text/javascript" src="assets/js/timepicker.js"></script>
-    <script type="text/javascript" src="assets/js/Chart.js-master/src/chart.js"></script>
-    
     <script type="text/javascript">
-
         $(document).ready(function(e){
             $('.uniq-menu li a.menu-parent').click(function( ){
                 $(this).toggleClass('rotate');
@@ -73,6 +70,15 @@
             $('.header .container ul li a.fa').click(function( ){
                 $(this).toggleClass('close');
                 $("body").toggleClass('slide-menu');
+            });
+        });
+        jQuery(document).ready(function($) {
+            $('.uniq-tab-special .uniq-tab-nav a[href^="#"]').on('click', function(event) {
+                $('.uniq-tab-special .uniq-tab-content section').addClass('hide');
+                $('.uniq-tab-special .uniq-tab-nav a.active').removeClass('active');
+                var target = $(this).attr('href');
+                $('.uniq-tab-special .uniq-tab-content section'+target).removeClass('hide');
+                $(this).addClass('active');
             });
         });
     </script>
