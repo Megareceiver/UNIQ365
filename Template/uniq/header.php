@@ -63,7 +63,7 @@
                 <a href="#"><i class="fa fa-home"></i>DASHBOARD</a>
             </li>
             <li>
-                <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>SALES</a>
+                <a href="#" class="menu-parent"><i class="fa fa-shopping-cart"></i>SALES</a>
                 <div class="menu-child">
                     <span>
                         <a href="#" class="menu-sub-child" data-title="OP">Operations</a>

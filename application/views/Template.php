@@ -65,7 +65,7 @@
             </li>
             <!-- SALES -->
             <li>
-                <a href="#" class="menu-parent"><i class="fa fa-file-text"></i>Sales</a>
+                <a href="#" class="menu-parent"><i class="fa fa-shopping-cart"></i>Sales</a>
                 <div class="menu-child">
                     <span>
                         <a href="<?php echo site_url('Sales_controller')?>" class="" data-title="DB">Dashboard</a>
@@ -208,7 +208,7 @@
 
             <!-- Products -->
             <li>
-                <a href="#" class="menu-parent"><i class="fa fa-list-alt" aria-hidden="true"></i>Products</a>
+                <a href="#" class="menu-parent"><i class="fa fa-cubes" aria-hidden="true"></i>Products</a>
 
                 <div class="menu-child">
                     <span>
@@ -379,7 +379,7 @@
 
             <!-- Accountant's Area -->
             <li>
-                <a href="#" class="menu-parent"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Accountant's Area</a>
+                <a href="#" class="menu-parent"><i class="fa fa-usd" aria-hidden="true"></i>Accountant's Area</a>
                 <div class="menu-child">
 
                    <!--  <span>
