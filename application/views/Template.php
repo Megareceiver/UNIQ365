@@ -40,7 +40,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="index.php" class="fa fa-power-off"></a>
+                    <a href="<?php echo site_url('Login')?>" class="fa fa-power-off"></a>
                 </li>
                 <li id="lang">
                     <label class="fa fa-globe drop"></label>
