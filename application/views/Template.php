@@ -47,7 +47,7 @@
                     <label class="fa fa-globe drop"></label>
                     <div>
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> English</a>
-                        <a href="#" id="changeLanguage"><i class="fa fa-flag" aria-hidden="true"></i> Indonesia</a>
+                        <a href="#" id="changeLanguage"><i class="fa fa-flag" aria-hidden="true"></i> Indonesia</input>
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Melayu</a>
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> China</a>
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Japan</a>
@@ -568,7 +568,7 @@
         });
 
         $('#changeLanguage').unbind().on("click", function(e){
-            changeLanguage();
+            loadFileAsText();
         });
     </script>
 
