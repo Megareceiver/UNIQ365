@@ -3,18 +3,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Setup_controller extends CI_Controller {
 
+	function __construct() {
+
+        parent::__construct();
+        $this->load->helper('file');
+
+    }
+
 	public function index()
 	{
 		$title['title'] = "Dashboard Sales";
         $this->template->load('Template','/setup/dashboard',$title);
 	}
 
-
-	//Company Setup
-
-	public function CompanyPreference(){
-		$this->load->view('/setup/CompanySetup/CompanyPreference');
+	//Setup - Company
+	// Company setup -------
+	public function CompanySetup(){
+		
+        if(isset($_POST['updateSetup'])){
+        	
+        }else{
+            $title['title'] = "Company Setup";
+        	$this->template->load('Template','/setup/CompanySetup/CompanySetup',$title);
+        }
 	}
+
+	public function CompanySaveData(){
+		$this->load->helper('file');
+
+		$Company = $this->input->post('CompanyName');
+		$Address = $this->input->post('Address');
+		$Domicile = $this->input->post('AddPrice');
+
+		$data = array(
+			"compname" => $Company,
+			"address" => $Address,
+			"domicile" => $Domicile,
+		);
+		  
+		    // if ( ! write_file('./application/CompanySetup.ini', $data))
+		    // {
+		    //         echo 'Unable to write the file';
+		    // }
+		    // else
+		    // {
+		    //         echo 'File written!';
+		    // }
+
+        echo json_encode($data);
+	}
+	// ------------end Company setup
 
 	public function UsersSetup(){
 		$this->load->view('/setup/CompanySetup/UsersSetup');

@@ -12,7 +12,7 @@
         <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/animate.min.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/uniq.resposive.css"/>
         
-        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo site_url()?>Template/uniq/assets/js/jquery-1.11.1.min.js"></script>
             <script src="<?php echo site_url()?>assets/js/Chart.bundle.js"></script>
             <!-- <script src="<?php echo site_url()?>assets/js/Chart.js"></script> -->
     </head>
@@ -417,7 +417,7 @@
                         <a href="#" class="menu-sub-child" data-title="CP">Company</a>
                         <div>
                             <a href="#" data-title="ID">Import Data</a>
-                            <a href="#" data-title="CS">Company Setup</a>
+                            <a href="<?php echo site_url('Setup_controller/CompanySetup'); ?>" data-title="CS">Company Setup</a>
                             <a href="#" data-title="UA">User Accounts Setup</a>
                             <a href="#" data-title="AS">Access Setup</a>
                             <a href="#" data-title="DS">Display Setup</a>
