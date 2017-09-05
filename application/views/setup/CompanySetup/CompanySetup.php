@@ -1,7 +1,3 @@
-<script type="text/javascript">
-    
-</script>
-
 <form class="uniq-form" style="width: 80%;" id="form">
     <div class="uniq-col col-2">
         <ul>
@@ -117,7 +113,7 @@
         </ul>
         <ul>
             <li>
-            <input class="uniq-button" type="button" value="Back">
+            <input class="uniq-button" type="button" value="Back" id="back">
             </li>
         </ul>
     </div>
@@ -277,37 +273,38 @@ $.ajax({
         url:'<?php echo site_url('Setup_controller/CompanySaveData')?>',
         type: "POST",
         data: $('#form').serialize(),
-        dataType: "JSON",
+        dataType: "html",
        success: function(respone){
 
-            setup = [{
-                'Company_Name':respone.compname, 
-                'Address':respone.address,
-                'Domicile':respone.domicile,
-                'PhoneNumber':respone.PhoneNumber,
-                'FaxNumber':respone.FaxNumber,
-                'EmailAddress':respone.EmailAddress,
-                'BCCAddress':respone.BCCAddress, 
-                'OfficialCompany':respone.OfficialCompany,
-                'GSTNo':respone.GSTNo,
-                'HomeCurrency':respone.HomeCurrency,
-                'FiscalYear':respone.FiscalYear,
-                'TaxPeriods':respone.TaxPeriods,
-                'TaxLastPeriods':respone.TaxLastPeriods,
-                'NewCompLogo':respone.NewCompLogo,
-                'DeleteLogo':respone.DeleteLogo,
-                'BasePrice':respone.BasePrice,
-                'AddPrice':respone.AddPrice,
-                'RoundToNearest':respone.RoundToNearest,
-                'SearchItem':respone.SearchItem,
-                'SearchCustomer':respone.SearchCustomer,
-                'SearchSupplier':respone.SearchSupplier,
-                'AutomaticRevaluation':respone.AutomaticRevaluation,
-                'TimeZone':respone.TimeZone,
-                'LoginTimeout':respone.LoginTimeout,
+            // setup = [{
+            //     'Company_Name':respone.compname, 
+            //     'Address':respone.address,
+            //     'Domicile':respone.domicile,
+            //     'PhoneNumber':respone.PhoneNumber,
+            //     'FaxNumber':respone.FaxNumber,
+            //     'EmailAddress':respone.EmailAddress,
+            //     'BCCAddress':respone.BCCAddress, 
+            //     'OfficialCompany':respone.OfficialCompany,
+            //     'GSTNo':respone.GSTNo,
+            //     'HomeCurrency':respone.HomeCurrency,
+            //     'FiscalYear':respone.FiscalYear,
+            //     'TaxPeriods':respone.TaxPeriods,
+            //     'TaxLastPeriods':respone.TaxLastPeriods,
+            //     'NewCompLogo':respone.NewCompLogo,
+            //     'DeleteLogo':respone.DeleteLogo,
+            //     'BasePrice':respone.BasePrice,
+            //     'AddPrice':respone.AddPrice,
+            //     'RoundToNearest':respone.RoundToNearest,
+            //     'SearchItem':respone.SearchItem,
+            //     'SearchCustomer':respone.SearchCustomer,
+            //     'SearchSupplier':respone.SearchSupplier,
+            //     'AutomaticRevaluation':respone.AutomaticRevaluation,
+            //     'TimeZone':respone.TimeZone,
+            //     'LoginTimeout':respone.LoginTimeout,
 
-            }];
-            console.log(setup);
+            // }];
+
+            // console.log(setup);
 
             $("#successAlert").addClass('show');
        },

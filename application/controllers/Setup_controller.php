@@ -24,6 +24,7 @@ class Setup_controller extends CI_Controller {
         	
         }else{
             $title['title'] = "Company Setup";
+
         	$this->template->load('Template','/setup/CompanySetup/CompanySetup',$title);
         }
 	}
@@ -59,34 +60,34 @@ class Setup_controller extends CI_Controller {
 
 
 		$data = array(
-			"compname" => $Company,
-			"address" => $Address,
-			"domicile" => $Domicile,
-			"PhoneNumber" => $PhoneNumber,
-			"FaxNumber"=> $FaxNumber, 
-			"EmailAddress"=> $EmailAddress,
-			"BCCAddress"=> $BCCAddress,
-			"OfficialCompany"=> $OfficialCompany, 
-			"GSTNo"=> $GSTNo, 
-			"HomeCurrency"=> $HomeCurrency, 
-			"FiscalYear"=> $FiscalYear,
-			"TaxPeriods"=> $TaxPeriods,
-			"TaxLastPeriods"=> $TaxLastPeriods,
-			"NewCompLogo"=> $NewCompLogo,
-			"DeleteLogo"=> $DeleteLogo,
-			"BasePrice"=> $BasePrice,
-			"AddPrice"=> $AddPrice,
-			"RoundToNearest"=> $RoundToNearest,
-			"SearchItem"=> $SearchItem,
-			"SearchCustomer"=> $SearchCustomer,
-			"SearchSupplier"=> $SearchSupplier,
-			"AutomaticRevaluation"=> $AutomaticRevaluation,
-			"TimeZone"=> $TimeZone,
-			"LoginTimeout"=> $LoginTimeout,
+			"Company Name#".$Company.'',
+			"\n Address#".$Address,
+			"\n Domicile#".$Domicile,
+			"\n PhoneNumber#".$PhoneNumber,
+			"\n FaxNumber#".$FaxNumber, 
+			"\n EmailAddress#".$EmailAddress,
+			"\n BCCAddress#".$BCCAddress,
+			"\n OfficialCompany#".$OfficialCompany, 
+			"\n GSTNo#".$GSTNo, 
+			"\n HomeCurrency#".$HomeCurrency, 
+			"\n FiscalYear#".$FiscalYear,
+			"\n TaxPeriods#".$TaxPeriods,
+			"\n TaxLastPeriods#".$TaxLastPeriods,
+			"\n NewCompLogo#".$NewCompLogo,
+			"\n DeleteLogo#".$DeleteLogo,
+			"\n BasePrice#".$BasePrice,
+			"\n AddPrice#".$AddPrice,
+			"\n RoundToNearest#".$RoundToNearest,
+			"\n SearchItem".$SearchItem,
+			"\n SearchCustomer#".$SearchCustomer,
+			"\n SearchSupplier#".$SearchSupplier,
+			"\n AutomaticRevaluation#".$AutomaticRevaluation,
+			"\n TimeZone#".$TimeZone,
+			"\n LoginTimeout#".$LoginTimeout,
 
 		);
 
-		$file = json_encode($data);
+		$file = implode($data);
 		  
 		    $file_path = APPPATH . "../application/config/CompanySetup.ini";
 			if(file_exists($file_path))
