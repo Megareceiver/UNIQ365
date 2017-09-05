@@ -102,46 +102,48 @@
             </ul>
 </div>
 <script>
-var lang = [{
-    head  : [
-        "Buat Catatan",
-        "Buat Faktur",
-        "Pembayaran Pelanggan", 
-        "Buat Nota Hutang", 
-        "Buat Faktur Supplier", 
-        "Pembayaran suplier", 
-        "Rekonsilisasi Bank", 
-        "Pembayaran", 
-        "Lihat Transaksi Bank", 
-        "Kirim Statmen Pelanggan", 
-        "Laba Rugi",
-        "Neraca Keuangan", 
-        "Persiapan Kembali GST", 
-        "Pemeliharaan Perusahaan"
-        ]},{
-    title : [
-        "Kirim kutipan untuk pelanggan anda", 
-        "Jual barang atau jasa pada pelanggan anda", 
-        "Menerima pembayaran dari pelanggan", 
-        "Retur barang", 
-        "Beli barang dari suplier", 
-        "Pembayaran suplier", 
-        "Lihat dan rekonsilisasi bank anda", 
-        "mengisikan pembayaran kedalam bank secara manual", 
-        "Lihat pembayaran, struk, dan transaksi bank",
-        "email(print) statmen pada semua pelanggan", 
-        "Lihat laba rugi", 
-        "Aset dan kewajiban",
-        "pajak kembali dan pelaporan pajak",
-        "Mengatur branding, finansial pertahun, dan lainnya"]}
-];
-console.log(lang[1].title.length);
-for(var a = 0; a < lang[1].title.length; a++){
-    $('[lang="dt-'+a+'"]').html(lang[1].title[a]);  
-}
-for(var b = 0; b < lang[0].head.length; b++){
+function changeLanguage(){
+    var lang = [{
+        head  : [
+            "Buat Catatan",
+            "Buat Faktur",
+            "Pembayaran Pelanggan", 
+            "Buat Nota Hutang", 
+            "Buat Faktur Supplier", 
+            "Pembayaran suplier", 
+            "Rekonsilisasi Bank", 
+            "Pembayaran", 
+            "Lihat Transaksi Bank", 
+            "Kirim Statmen Pelanggan", 
+            "Laba Rugi",
+            "Neraca Keuangan", 
+            "Persiapan Kembali GST", 
+            "Pemeliharaan Perusahaan"
+            ]},{
+        title : [
+            "Kirim kutipan untuk pelanggan anda", 
+            "Jual barang atau jasa pada pelanggan anda", 
+            "Menerima pembayaran dari pelanggan", 
+            "Retur barang", 
+            "Beli barang dari suplier", 
+            "Pembayaran suplier", 
+            "Lihat dan rekonsilisasi bank anda", 
+            "mengisikan pembayaran kedalam bank secara manual", 
+            "Lihat pembayaran, struk, dan transaksi bank",
+            "email(print) statmen pada semua pelanggan", 
+            "Lihat laba rugi", 
+            "Aset dan kewajiban",
+            "pajak kembali dan pelaporan pajak",
+            "Mengatur branding, finansial pertahun, dan lainnya"]}
+    ];
+    console.log(lang[1].title.length);
+    for(var a = 0; a < lang[1].title.length; a++){
+        $('[lang="dt-'+a+'"]').html(lang[1].title[a]);  
+    }
+    for(var b = 0; b < lang[0].head.length; b++){
 
-    $('[lang="d-'+b+'"]').html(lang[0].head[b]);    
+        $('[lang="d-'+b+'"]').html(lang[0].head[b]);    
+    }
 }
     
 
