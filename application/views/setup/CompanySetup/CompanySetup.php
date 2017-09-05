@@ -1,6 +1,9 @@
+<script type="text/javascript">
+    
+</script>
 
-<div class="uniq-col col-2" style="margin-right: 1; margin-left: 1;">
-    <form class="uniq-form" style="width: 80%;" id="form">
+<form class="uniq-form" style="width: 80%;" id="form">
+    <div class="uniq-col col-2">
         <ul>
             <li>
             <label>Company Name</label>
@@ -117,12 +120,9 @@
             <input class="uniq-button" type="button" value="Back">
             </li>
         </ul>
-    </form>
-</div>
+    </div>
 
-
-<div class="uniq-col col-2">
-    <form class="uniq-form" style="width: 85%;" id="form2">
+    <div class="uniq-col col-2">
         <ul>
             <li>
             <label>Company Logo</label>
@@ -143,7 +143,7 @@
             <li>
             <label>Delete Company Logo</label>
                 <em class="checkbox">
-                    <input id="option-1" type="checkbox" name="DeleteLogo" value="option">
+                    <input id="option-1" type="checkbox" name="DeleteLogo" value="DeleteLogo">
                     <label for="option-1"></label>
                 </em>
             </li>
@@ -181,7 +181,7 @@
             <li>
             <label>Search Item List</label>
                 <em class="checkbox">
-                    <input id="option-2" type="checkbox" name="SearchItem" value="option">
+                    <input id="option-2" type="checkbox" name="SearchItem" value="SearchItem">
                     <label for="option-2"></label>
                 </em>
             </li>
@@ -190,7 +190,7 @@
             <li>
             <label>Search Customer List</label>
                 <em class="checkbox">
-                    <input id="option-3" type="checkbox" name="SearchCustomer" value="option">
+                    <input id="option-3" type="checkbox" name="SearchCustomer" value="SearchCustomer">
                     <label for="option-3"></label>
                 </em>
             </li>
@@ -199,7 +199,7 @@
             <li>
             <label>Search Supplier List</label>
                 <em class="checkbox">
-                    <input id="option-4" type="checkbox" name="SearchSupplier" value="option">
+                    <input id="option-4" type="checkbox" name="SearchSupplier" value="SearchSupplier">
                     <label for="option-4"></label>
                 </em>
             </li>
@@ -213,7 +213,7 @@
             <li>
             <label>Automatic Revaluation Currency Accounts</label>
                 <em class="checkbox">
-                    <input id="option-5" type="checkbox" name="AutomaticRevaluation" value="option">
+                    <input id="option-5" type="checkbox" name="AutomaticRevaluation" value="AutomaticRevaluation">
                     <label for="option-5"></label>
                 </em>
             </li>
@@ -222,7 +222,7 @@
             <li>
             <label>Time Zone on Reports</label>
                 <em class="checkbox">
-                    <input id="option-6" type="checkbox" name="TimeZone" value="option">
+                    <input id="option-6" type="checkbox" name="TimeZone" value="TimeZone">
                     <label for="option-6"></label>
                 </em>
             </li>
@@ -238,8 +238,8 @@
             <input class="uniq-button" type="button" value="Update" id="updateSetup">
             </li>
         </ul>
-    </form>
-</div>
+    </div>
+</form>
 
 
 <!-- Success Message -->
@@ -270,8 +270,8 @@
 <script type="text/javascript" src="<?php echo site_url()?>assets/js/datepicker.js"></script>
 <script type="text/javascript" src="<?php echo site_url()?>assets/js/timepicker.js"></script>
 
-<script type="text/javascript">
 
+<script type="text/javascript">
 $("#updateSetup").click(function(){
 $.ajax({
         url:'<?php echo site_url('Setup_controller/CompanySaveData')?>',
@@ -283,7 +283,29 @@ $.ajax({
             setup = [{
                 'Company_Name':respone.compname, 
                 'Address':respone.address,
-                'Domicile':respone.domicile, 
+                'Domicile':respone.domicile,
+                'PhoneNumber':respone.PhoneNumber,
+                'FaxNumber':respone.FaxNumber,
+                'EmailAddress':respone.EmailAddress,
+                'BCCAddress':respone.BCCAddress, 
+                'OfficialCompany':respone.OfficialCompany,
+                'GSTNo':respone.GSTNo,
+                'HomeCurrency':respone.HomeCurrency,
+                'FiscalYear':respone.FiscalYear,
+                'TaxPeriods':respone.TaxPeriods,
+                'TaxLastPeriods':respone.TaxLastPeriods,
+                'NewCompLogo':respone.NewCompLogo,
+                'DeleteLogo':respone.DeleteLogo,
+                'BasePrice':respone.BasePrice,
+                'AddPrice':respone.AddPrice,
+                'RoundToNearest':respone.RoundToNearest,
+                'SearchItem':respone.SearchItem,
+                'SearchCustomer':respone.SearchCustomer,
+                'SearchSupplier':respone.SearchSupplier,
+                'AutomaticRevaluation':respone.AutomaticRevaluation,
+                'TimeZone':respone.TimeZone,
+                'LoginTimeout':respone.LoginTimeout,
+
             }];
             console.log(setup);
 

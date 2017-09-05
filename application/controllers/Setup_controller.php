@@ -33,24 +33,72 @@ class Setup_controller extends CI_Controller {
 
 		$Company = $this->input->post('CompanyName');
 		$Address = $this->input->post('Address');
-		$Domicile = $this->input->post('AddPrice');
+		$Domicile = $this->input->post('Domicile');	
+		$PhoneNumber = $this->input->post('Domicile');	
+		$FaxNumber = $this->input->post('PhoneNumber');			
+		$EmailAddress = $this->input->post('EmailAddress');	
+		$BCCAddress = $this->input->post('BCCAddress');	
+		$OfficialCompany = $this->input->post('OfficialCompany');	
+		$GSTNo = $this->input->post('GSTNo');	
+		$HomeCurrency = $this->input->post('HomeCurrency');	
+		$FiscalYear = $this->input->post('FiscalYear');	
+		$TaxPeriods = $this->input->post('TaxPeriods');	
+		$TaxLastPeriods = $this->input->post('TaxLastPeriods');	
+		$NewCompLogo = $this->input->post('NewCompLogo');	
+		$DeleteLogo = $this->input->post('DeleteLogo');	
+		$BasePrice = $this->input->post('BasePrice');	
+		$AddPrice = $this->input->post('AddPrice');	
+		$RoundToNearest = $this->input->post('RoundToNearest');	
+		$SearchItem = $this->input->post('SearchItem');	
+		$SearchCustomer = $this->input->post('SearchCustomer');	
+		$SearchSupplier = $this->input->post('SearchSupplier');	
+		$AutomaticRevaluation = $this->input->post('AutomaticRevaluation');	
+		$TimeZone = $this->input->post('TimeZone');	
+		$LoginTimeout = $this->input->post('LoginTimeout');	
+
+
 
 		$data = array(
 			"compname" => $Company,
 			"address" => $Address,
 			"domicile" => $Domicile,
-		);
-		  
-		    // if ( ! write_file('./application/CompanySetup.ini', $data))
-		    // {
-		    //         echo 'Unable to write the file';
-		    // }
-		    // else
-		    // {
-		    //         echo 'File written!';
-		    // }
+			"PhoneNumber" => $PhoneNumber,
+			"FaxNumber"=> $FaxNumber, 
+			"EmailAddress"=> $EmailAddress,
+			"BCCAddress"=> $BCCAddress,
+			"OfficialCompany"=> $OfficialCompany, 
+			"GSTNo"=> $GSTNo, 
+			"HomeCurrency"=> $HomeCurrency, 
+			"FiscalYear"=> $FiscalYear,
+			"TaxPeriods"=> $TaxPeriods,
+			"TaxLastPeriods"=> $TaxLastPeriods,
+			"NewCompLogo"=> $NewCompLogo,
+			"DeleteLogo"=> $DeleteLogo,
+			"BasePrice"=> $BasePrice,
+			"AddPrice"=> $AddPrice,
+			"RoundToNearest"=> $RoundToNearest,
+			"SearchItem"=> $SearchItem,
+			"SearchCustomer"=> $SearchCustomer,
+			"SearchSupplier"=> $SearchSupplier,
+			"AutomaticRevaluation"=> $AutomaticRevaluation,
+			"TimeZone"=> $TimeZone,
+			"LoginTimeout"=> $LoginTimeout,
 
-        echo json_encode($data);
+		);
+
+		$file = json_encode($data);
+		  
+		    $file_path = APPPATH . "../application/config/CompanySetup.ini";
+			if(file_exists($file_path))
+			{
+			    write_file($file_path, $file);
+			}
+			else
+			{
+			    write_file($file_path, $file);
+			}
+
+        echo json_encode($file);
 	}
 	// ------------end Company setup
 
