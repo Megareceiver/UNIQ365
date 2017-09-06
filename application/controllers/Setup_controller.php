@@ -24,7 +24,8 @@ class Setup_controller extends CI_Controller {
         	
         }else{
             $title['title'] = "Company Setup";
-
+      //       $string = read_file(dirname(__FILE__)/site_url().'application/config/CompanySetup.ini');
+   			// $title['data'] = json_encode($string);
         	$this->template->load('Template','/setup/CompanySetup/CompanySetup',$title);
         }
 	}
@@ -35,8 +36,8 @@ class Setup_controller extends CI_Controller {
 		$Company = $this->input->post('CompanyName');
 		$Address = $this->input->post('Address');
 		$Domicile = $this->input->post('Domicile');	
-		$PhoneNumber = $this->input->post('Domicile');	
-		$FaxNumber = $this->input->post('PhoneNumber');			
+		$PhoneNumber = $this->input->post('PhoneNumber');	
+		$FaxNumber = $this->input->post('FaxNumber');			
 		$EmailAddress = $this->input->post('EmailAddress');	
 		$BCCAddress = $this->input->post('BCCAddress');	
 		$OfficialCompany = $this->input->post('OfficialCompany');	
@@ -59,37 +60,65 @@ class Setup_controller extends CI_Controller {
 
 
 
+		// $data = array(
+		// 	"Company_Name#".$Company,
+		// 	"\r\nAddress#".$Address,
+		// 	"\r\nDomicile#".$Domicile,
+		// 	"\r\nPhoneNumber#".$PhoneNumber,
+		// 	"\r\nFaxNumber#".$FaxNumber, 
+		// 	"\r\nEmailAddress#".$EmailAddress,
+		// 	"\r\nBCCAddress#".$BCCAddress,
+		// 	"\r\nOfficialCompany#".$OfficialCompany, 
+		// 	"\r\nGSTNo#".$GSTNo, 
+		// 	"\r\nHomeCurrency#".$HomeCurrency, 
+		// 	"\r\nFiscalYear#".$FiscalYear,
+		// 	"\r\nTaxPeriods#".$TaxPeriods,
+		// 	"\r\nTaxLastPeriods#".$TaxLastPeriods,
+		// 	"\r\nNewCompLogo#".$NewCompLogo,
+		// 	"\r\nDeleteLogo#".$DeleteLogo,
+		// 	"\r\nBasePrice#".$BasePrice,
+		// 	"\r\nAddPrice#".$AddPrice,
+		// 	"\r\nRoundToNearest#".$RoundToNearest,
+		// 	"\r\nSearchItem".$SearchItem,
+		// 	"\r\nSearchCustomer#".$SearchCustomer,
+		// 	"\r\nSearchSupplier#".$SearchSupplier,
+		// 	"\r\nAutomaticRevaluation#".$AutomaticRevaluation,
+		// 	"\r\nTimeZone#".$TimeZone,
+		// 	"\r\nLoginTimeout#".$LoginTimeout,
+
+		// );
+
 		$data = array(
-			"Company Name#".$Company.'',
-			"\n Address#".$Address,
-			"\n Domicile#".$Domicile,
-			"\n PhoneNumber#".$PhoneNumber,
-			"\n FaxNumber#".$FaxNumber, 
-			"\n EmailAddress#".$EmailAddress,
-			"\n BCCAddress#".$BCCAddress,
-			"\n OfficialCompany#".$OfficialCompany, 
-			"\n GSTNo#".$GSTNo, 
-			"\n HomeCurrency#".$HomeCurrency, 
-			"\n FiscalYear#".$FiscalYear,
-			"\n TaxPeriods#".$TaxPeriods,
-			"\n TaxLastPeriods#".$TaxLastPeriods,
-			"\n NewCompLogo#".$NewCompLogo,
-			"\n DeleteLogo#".$DeleteLogo,
-			"\n BasePrice#".$BasePrice,
-			"\n AddPrice#".$AddPrice,
-			"\n RoundToNearest#".$RoundToNearest,
-			"\n SearchItem".$SearchItem,
-			"\n SearchCustomer#".$SearchCustomer,
-			"\n SearchSupplier#".$SearchSupplier,
-			"\n AutomaticRevaluation#".$AutomaticRevaluation,
-			"\n TimeZone#".$TimeZone,
-			"\n LoginTimeout#".$LoginTimeout,
+			"Company_Name" =>$Company,
+			"Address"=>$Address,
+			"Domicile"=>$Domicile,
+			"PhoneNumber"=>$PhoneNumber,
+			"FaxNumber"=>$FaxNumber, 
+			"EmailAddress"=>$EmailAddress,
+			"BCCAddress"=>$BCCAddress,
+			"OfficialCompany"=>$OfficialCompany, 
+			"GSTNo"=>$GSTNo, 
+			"HomeCurrency"=>$HomeCurrency, 
+			"FiscalYear"=>$FiscalYear,
+			"TaxPeriods"=>$TaxPeriods,
+			"TaxLastPeriods"=>$TaxLastPeriods,
+			"NewCompLogo"=>$NewCompLogo,
+			"DeleteLogo"=>$DeleteLogo,
+			"BasePrice"=>$BasePrice,
+			"AddPrice"=>$AddPrice,
+			"RoundToNearest"=>$RoundToNearest,
+			"SearchItem"=>$SearchItem,
+			"SearchCustomer"=>$SearchCustomer,
+			"SearchSupplier"=>$SearchSupplier,
+			"AutomaticRevaluation"=>$AutomaticRevaluation,
+			"TimeZone"=>$TimeZone,
+			"LoginTimeout"=>$LoginTimeout,
 
 		);
 
-		$file = implode($data);
+		$file = json_encode($data);
 		  
-		    $file_path = APPPATH . "../application/config/CompanySetup.ini";
+		    $file_path = APPPATH . "../assets/CompanySetup.ini";
 			if(file_exists($file_path))
 			{
 			    write_file($file_path, $file);
@@ -99,7 +128,7 @@ class Setup_controller extends CI_Controller {
 			    write_file($file_path, $file);
 			}
 
-        echo json_encode($file);
+        echo json_encode($data);
 	}
 	// ------------end Company setup
 
