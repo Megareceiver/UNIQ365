@@ -28,6 +28,8 @@ textarea {
   font: 14px 'Roboto', sans-serif;
   color: #666;
 }
+
+*{ box-sizing: border-box; }
 /*---------------------- Dashboard Style */
 .uniq-dashboard-list {
   margin: 0;
@@ -829,6 +831,7 @@ textarea {
   display: inline-block !important;
   vertical-align: top;
   margin-right: -2px;
+  padding: 15px; /*temporary*/
 }
 .uniq-col.col-2 {
   width: 50%;
