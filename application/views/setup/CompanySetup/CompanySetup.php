@@ -27,19 +27,70 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             $("[name='CompanyLogo']").val(data.NewCompLogo);
             $("[name='NewCompLogo']").val(data.NewCompLogo);
 
-            $("[name='DeleteLogo']").val(data.DeleteLogo);
+            // $("[name='DeleteLogo']").val(data.DeleteLogo);
 
-            console
+            console.log(data.DeleteLogo);
+            if (data.DeleteLogo == "DeleteLogo"){
+                console.log('ok');
+                $("#option-1").attr('checked', true);
+            }else{
+                $("#option-1").attr('checked', false);
+            }
 
 
             $("[name='BasePrice']").val(data.BasePrice);
             $("[name='AddPrice']").val(data.AddPrice);
             $("[name='RoundToNearest']").val(data.RoundToNearest);
-            $("[name='SearchItem']").val(data.SearchItem);
-            $("[name='SearchCustomer']").val(data.SearchCustomer);
-            $("[name='SearchSupplier']").val(data.SearchSupplier);
-            $("[name='AutomaticRevaluation']").val(data.AutomaticRevaluation);
-            $("[name='TimeZone']").val(data.TimeZone);
+            // $("[name='SearchItem']").val(data.SearchItem);
+            console.log(data.SearchItem);
+            if (data.SearchItem == "SearchItem"){
+                console.log('ok');
+                $("#option-2").attr('checked', true);
+            }else{
+                $("#option-2").attr('checked', false);
+            }
+
+
+            // $("[name='SearchCustomer']").val(data.SearchCustomer);
+            console.log(data.SearchCustomer);
+            if (data.SearchCustomer == "SearchCustomer"){
+                console.log('ok');
+                $("#option-3").attr('checked', true);
+            }else{
+                $("#option-3").attr('checked', false);
+            }
+
+
+            // $("[name='SearchSupplier']").val(data.SearchSupplier);
+            console.log(data.SearchSupplier);
+            if (data.SearchSupplier == "SearchSupplier"){
+                console.log('ok');
+                $("#option-4").attr('checked', true);
+            }else{
+                $("#option-4").attr('checked', false);
+            }
+
+
+            // $("[name='AutomaticRevaluation']").val(data.AutomaticRevaluation);
+            console.log(data.AutomaticRevaluation[0]);
+            if (data.AutomaticRevaluation == "AutomaticRevaluation"){
+                console.log('ok');
+                $("#option-5").attr('checked', true);
+            }else{
+                $("#option-5").attr('checked', false);
+            }
+
+
+            // $("[name='TimeZone']").val(data.TimeZone);
+            console.log(data.TimeZone);
+            if (data.TimeZone[0] == "TimeZone"){
+                console.log('ok');
+                $("#option-6").attr('checked', true);
+            }else{
+                $("#option-6").attr('checked', false);
+            }
+
+
             $("[name='LoginTimeout']").val(data.LoginTimeout);
         },
         error: function(){
@@ -191,7 +242,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-028">Delete Company Logo</label>
                 <em class="checkbox">
-                    <input id="option-1" type="checkbox" name="DeleteLogo[]" value="DeleteLogo">
+                    <input id="option-1" type="checkbox" name="DeleteLogo[]" value="DeleteLogo" />
                     <label for="option-1"></label>
                 </em>
             </li>
@@ -229,7 +280,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-033">Search Item List</label>
                 <em class="checkbox">
-                    <input id="option-2" type="checkbox" name="SearchItem" value="SearchItem">
+                    <input id="option-2" type="checkbox" name="SearchItem[]" value="SearchItem" />
                     <label for="option-2"></label>
                 </em>
             </li>
@@ -238,7 +289,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-034">Search Customer List</label>
                 <em class="checkbox">
-                    <input id="option-3" type="checkbox" name="SearchCustomer" value="SearchCustomer">
+                    <input id="option-3" type="checkbox" name="SearchCustomer[]" value="SearchCustomer" />
                     <label for="option-3"></label>
                 </em>
             </li>
@@ -247,7 +298,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-035">Search Supplier List</label>
                 <em class="checkbox">
-                    <input id="option-4" type="checkbox" name="SearchSupplier" value="SearchSupplier">
+                    <input id="option-4" type="checkbox" name="SearchSupplier[]" value="SearchSupplier" />
                     <label for="option-4"></label>
                 </em>
             </li>
@@ -261,7 +312,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-037">Automatic Revaluation Currency Accounts</label>
                 <em class="checkbox">
-                    <input id="option-5" type="checkbox" name="AutomaticRevaluation" value="AutomaticRevaluation">
+                    <input id="option-5" type="checkbox" name="AutomaticRevaluation[]" value="AutomaticRevaluation" />
                     <label for="option-5"></label>
                 </em>
             </li>
@@ -270,7 +321,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-038">Time Zone on Reports</label>
                 <em class="checkbox">
-                    <input id="option-6" type="checkbox" name="TimeZone" value="TimeZone">
+                    <input id="option-6" type="checkbox" name="TimeZone[]" value="TimeZone" />
                     <label for="option-6"></label>
                 </em>
             </li>
