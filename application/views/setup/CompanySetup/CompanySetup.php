@@ -29,9 +29,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 
             // $("[name='DeleteLogo']").val(data.DeleteLogo);
 
-            console.log(data.DeleteLogo);
             if (data.DeleteLogo == "DeleteLogo"){
-                console.log('ok');
                 $("#option-1").attr('checked', true);
             }else{
                 $("#option-1").attr('checked', false);
@@ -42,9 +40,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             $("[name='AddPrice']").val(data.AddPrice);
             $("[name='RoundToNearest']").val(data.RoundToNearest);
             // $("[name='SearchItem']").val(data.SearchItem);
-            console.log(data.SearchItem);
             if (data.SearchItem == "SearchItem"){
-                console.log('ok');
                 $("#option-2").attr('checked', true);
             }else{
                 $("#option-2").attr('checked', false);
@@ -52,9 +48,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 
 
             // $("[name='SearchCustomer']").val(data.SearchCustomer);
-            console.log(data.SearchCustomer);
             if (data.SearchCustomer == "SearchCustomer"){
-                console.log('ok');
                 $("#option-3").attr('checked', true);
             }else{
                 $("#option-3").attr('checked', false);
@@ -62,9 +56,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 
 
             // $("[name='SearchSupplier']").val(data.SearchSupplier);
-            console.log(data.SearchSupplier);
             if (data.SearchSupplier == "SearchSupplier"){
-                console.log('ok');
                 $("#option-4").attr('checked', true);
             }else{
                 $("#option-4").attr('checked', false);
@@ -72,9 +64,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 
 
             // $("[name='AutomaticRevaluation']").val(data.AutomaticRevaluation);
-            console.log(data.AutomaticRevaluation[0]);
             if (data.AutomaticRevaluation == "AutomaticRevaluation"){
-                console.log('ok');
                 $("#option-5").attr('checked', true);
             }else{
                 $("#option-5").attr('checked', false);
@@ -82,9 +72,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 
 
             // $("[name='TimeZone']").val(data.TimeZone);
-            console.log(data.TimeZone);
             if (data.TimeZone[0] == "TimeZone"){
-                console.log('ok');
                 $("#option-6").attr('checked', true);
             }else{
                 $("#option-6").attr('checked', false);
@@ -101,7 +89,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 </script>
 
 <div name-module="setup">
-<form class="uniq-form" style="width: 80%;" id="form">
+<form class="uniq-form" id="form">
     <div class="uniq-col col-2">
         <ul>
             <li>
@@ -406,8 +394,6 @@ $.ajax({
                 'LoginTimeout':respone.LoginTimeout,}}
 
             ];
-
-            console.log(setup);
             $("#successAlert").addClass('show');
        },
        error: function(){
