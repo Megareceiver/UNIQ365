@@ -10,7 +10,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
         type: "GET",
         success: function(respone){
             var data = JSON.parse(respone);
-            console.log(data); // ["apple", "orange", "banana", "strawberry"]
+
             $("[name='CompanyName']").val(data.Company_Name);
             $("[name='Address']").val(data.Address);
             $("[name='Domicile']").val(data.Domicile);
@@ -26,7 +26,12 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             $("[name='TaxLastPeriods']").val(data.TaxLastPeriods);
             $("[name='CompanyLogo']").val(data.NewCompLogo);
             $("[name='NewCompLogo']").val(data.NewCompLogo);
+
             $("[name='DeleteLogo']").val(data.DeleteLogo);
+
+            console
+
+
             $("[name='BasePrice']").val(data.BasePrice);
             $("[name='AddPrice']").val(data.AddPrice);
             $("[name='RoundToNearest']").val(data.RoundToNearest);
@@ -38,7 +43,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             $("[name='LoginTimeout']").val(data.LoginTimeout);
         },
         error: function(){
-            
+            console.log('data is empty');
        }
     });
 });
@@ -186,7 +191,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-028">Delete Company Logo</label>
                 <em class="checkbox">
-                    <input id="option-1" type="checkbox" name="DeleteLogo" value="DeleteLogo">
+                    <input id="option-1" type="checkbox" name="DeleteLogo[]" value="DeleteLogo">
                     <label for="option-1"></label>
                 </em>
             </li>
