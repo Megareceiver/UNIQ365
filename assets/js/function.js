@@ -5,17 +5,22 @@ $('[lang-package]').unbind().on("click", function(e){
 
 // loadFileAsText();
 function loadFileAsText(language){
-    var fileContents = "";
-    var fileInput = "<?php echo site_url()?>assets/language/package/id/lang_"+language+".ini";
+   var fileContents = "";
+   var fileInput = "<?php echo site_url()?>assets/language/package/"+language+"/lang_"+language+".ini";
+    // var fileInput = "<?php echo site_url()?>assets/language/package/id/lang_id.ini";
 
    $.ajax({
             url: fileInput,
             async: false,
+            type: 'get',
+            dataType : 'json',
             success: function (data){
                 fileContents = data;
+                console.log('nah');
             }
         });
    changeLanguage(fileContents);
+   // console.log('nah');
 }
 
 function changeLanguage(fileContents){
@@ -25,24 +30,24 @@ function changeLanguage(fileContents){
         $('[lang-id="'+ieu[0]+'"]').html(ieu[1]);
     }
 }
-function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+// function setCookie(cname,cvalue,exdays) {
+//     var d = new Date();
+//     d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//     var expires = "expires=" + d.toGMTString();
+//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    // for(var i = 0; i < ca.length; i++) {
-    //     var c = ca[i];
-    //     while (c.charAt(0) == ' ') {
-    //         c = c.substring(1);
-    //     }
-    //     if (c.indexOf(name) == 0) {
-    //         return c.substring(name.length, c.length);
-    //     }
-    // }
-    return ca;
-}
+// function getCookie(cname) {
+//     var name = cname + "=";
+//     var ca = document.cookie.split(';');
+//     // for(var i = 0; i < ca.length; i++) {
+//     //     var c = ca[i];
+//     //     while (c.charAt(0) == ' ') {
+//     //         c = c.substring(1);
+//     //     }
+//     //     if (c.indexOf(name) == 0) {
+//     //         return c.substring(name.length, c.length);
+//     //     }
+//     // }
+//     return ca;
+// }
