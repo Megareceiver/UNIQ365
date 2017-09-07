@@ -53,7 +53,8 @@ textarea {
   /* background: #0b5383; temporary*/
   /* color: #fff; temporary*/
   border: 1px solid #0b5383; /*temporary*/
-  height: 75px;
+  /* height: 75px; */
+  min-height: 100px;  /*temporary*/
   padding: 15px 15px 15px 60px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
