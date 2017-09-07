@@ -1,9 +1,6 @@
 <script type="text/javascript">
 $(document).ready(function(){
 var json = '<?php echo site_url()?>assets/CompanySetup.ini';
-// var data = jQuery.parseJSON(json);
-// console.log(data); // ["apple", "orange", "banana", "strawberry"]
-// alert( data ); // "strawberry"
 
     $.ajax({
         url: json,
@@ -17,17 +14,15 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             $("[name='PhoneNumber']").val(data.PhoneNumber);
             $("[name='FaxNumber']").val(data.FaxNumber);
             $("[name='EmailAddress']").val(data.EmailAddress);
-            $("[name='BCCAddress']").val(data.Company_Name);
-            $("[name='OfficialCompany']").val(data.Company_Name);
-            $("[name='GSTNo']").val(data.Company_Name);
+            $("[name='BCCAddress']").val(data.BCCAddress);
+            $("[name='OfficialCompany']").val(data.OfficialCompany);
+            $("[name='GSTNo']").val(data.GSTNo);
             $("[name='HomeCurrency']").val(data.HomeCurrency);
             $("[name='FiscalYear']").val(data.FiscalYear);
             $("[name='TaxPeriods']").val(data.TaxPeriods);
             $("[name='TaxLastPeriods']").val(data.TaxLastPeriods);
             $("[name='CompanyLogo']").val(data.NewCompLogo);
             $("[name='NewCompLogo']").val(data.NewCompLogo);
-
-            // $("[name='DeleteLogo']").val(data.DeleteLogo);
 
             console.log(data.DeleteLogo);
             if (data.DeleteLogo == "DeleteLogo"){
@@ -37,11 +32,10 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
                 $("#option-1").attr('checked', false);
             }
 
-
             $("[name='BasePrice']").val(data.BasePrice);
             $("[name='AddPrice']").val(data.AddPrice);
             $("[name='RoundToNearest']").val(data.RoundToNearest);
-            // $("[name='SearchItem']").val(data.SearchItem);
+
             console.log(data.SearchItem);
             if (data.SearchItem == "SearchItem"){
                 console.log('ok');
@@ -50,8 +44,6 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
                 $("#option-2").attr('checked', false);
             }
 
-
-            // $("[name='SearchCustomer']").val(data.SearchCustomer);
             console.log(data.SearchCustomer);
             if (data.SearchCustomer == "SearchCustomer"){
                 console.log('ok');
@@ -60,8 +52,6 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
                 $("#option-3").attr('checked', false);
             }
 
-
-            // $("[name='SearchSupplier']").val(data.SearchSupplier);
             console.log(data.SearchSupplier);
             if (data.SearchSupplier == "SearchSupplier"){
                 console.log('ok');
@@ -70,9 +60,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
                 $("#option-4").attr('checked', false);
             }
 
-
-            // $("[name='AutomaticRevaluation']").val(data.AutomaticRevaluation);
-            console.log(data.AutomaticRevaluation[0]);
+            console.log(data.AutomaticRevaluation);
             if (data.AutomaticRevaluation == "AutomaticRevaluation"){
                 console.log('ok');
                 $("#option-5").attr('checked', true);
@@ -80,8 +68,6 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
                 $("#option-5").attr('checked', false);
             }
 
-
-            // $("[name='TimeZone']").val(data.TimeZone);
             console.log(data.TimeZone);
             if (data.TimeZone[0] == "TimeZone"){
                 console.log('ok');
@@ -89,7 +75,6 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             }else{
                 $("#option-6").attr('checked', false);
             }
-
 
             $("[name='LoginTimeout']").val(data.LoginTimeout);
         },
@@ -99,8 +84,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
     });
 });
 </script>
-
-
+<!-- left side -->
 <form class="uniq-form" style="width: 80%;" id="form">
     <div class="uniq-col col-2">
         <ul>
@@ -221,6 +205,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
         </ul>
     </div>
 
+<!-- rifght side -->
     <div class="uniq-col col-2">
         <ul>
             <li>
@@ -349,11 +334,11 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <b class="green" lang-id="scs-042">Success Insert Data</b>
             <span lang-id="scs-043">For close this alaret message you must click the button!</span>
         </p>
-        <a href="#action" class="button">OK</a>
+        <a href="#action" class="button" id="btnpopup">OK</a>
     </div>
 </div>
 
-<!-- Alert Message -->
+<!-- Alert Fail Message -->
 <div class="uniq-message" id="FailAlert">
     <div class="container animated shake">
         <i class="fa fa-exclamation-circle red" aria-hidden="true"></i>
@@ -361,7 +346,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <b class="red" lang-id="scs-044">Data Fail To Save!</b>
             <span lang-id="scs-045">For close this alaret message you must click the button!</span>
         </p>
-        <a href="#action" class="button">OK</a>
+        <a href="#action" class="button" id="btnpopup">OK</a>
     </div>
 </div>
 
@@ -372,14 +357,14 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 
 <script type="text/javascript">
 $("#updateSetup").click(function(){
-$.ajax({
+    $.ajax({
         url:'<?php echo site_url('Setup_controller/CompanySaveData')?>',
         type: "POST",
         data: $('#form').serialize(),
         dataType: "JSON",
-       success: function(respone){
+        success: function(respone){
 
-            setup = [{'data':{
+            setup = [{
                 'Company_Name':respone.Company, 
                 'Address':respone.Address,
                 'Domicile':respone.Domicile,
@@ -403,16 +388,19 @@ $.ajax({
                 'SearchSupplier':respone.SearchSupplier,
                 'AutomaticRevaluation':respone.AutomaticRevaluation,
                 'TimeZone':respone.TimeZone,
-                'LoginTimeout':respone.LoginTimeout,}}
+                'LoginTimeout':respone.LoginTimeout,
+            }];
 
-            ];
-
-            console.log(setup);
+            // console.log(setup);
             $("#successAlert").addClass('show');
-       },
-       error: function(){
+        },
+        error: function(){
             $("#FailAlert").addClass('show');
-       }
-   });
+        }
+    });
+});
+
+$('#btnpopup').click(function() {
+    location.reload();
 });
 </script>

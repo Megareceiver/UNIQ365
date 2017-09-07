@@ -19,15 +19,8 @@ class Setup_controller extends CI_Controller {
 	//Setup - Company
 	// Company setup -------
 	public function CompanySetup(){
-		
-        if(isset($_POST['updateSetup'])){
-        	
-        }else{
-            $title['title'] = "Company Setup";
-      //       $string = read_file(dirname(__FILE__)/site_url().'application/config/CompanySetup.ini');
-   			// $title['data'] = json_encode($string);
-        	$this->template->load('Template','/setup/CompanySetup/CompanySetup',$title);
-        }
+        $title['title'] = "Company Setup";
+    	$this->template->load('Template','/setup/CompanySetup/CompanySetup',$title);
 	}
 
 	public function CompanySaveData(){
@@ -58,36 +51,6 @@ class Setup_controller extends CI_Controller {
 		$TimeZone = $this->input->post('TimeZone');	
 		$LoginTimeout = $this->input->post('LoginTimeout');	
 
-
-
-		// $data = array(
-		// 	"Company_Name#".$Company,
-		// 	"\r\nAddress#".$Address,
-		// 	"\r\nDomicile#".$Domicile,
-		// 	"\r\nPhoneNumber#".$PhoneNumber,
-		// 	"\r\nFaxNumber#".$FaxNumber, 
-		// 	"\r\nEmailAddress#".$EmailAddress,
-		// 	"\r\nBCCAddress#".$BCCAddress,
-		// 	"\r\nOfficialCompany#".$OfficialCompany, 
-		// 	"\r\nGSTNo#".$GSTNo, 
-		// 	"\r\nHomeCurrency#".$HomeCurrency, 
-		// 	"\r\nFiscalYear#".$FiscalYear,
-		// 	"\r\nTaxPeriods#".$TaxPeriods,
-		// 	"\r\nTaxLastPeriods#".$TaxLastPeriods,
-		// 	"\r\nNewCompLogo#".$NewCompLogo,
-		// 	"\r\nDeleteLogo#".$DeleteLogo,
-		// 	"\r\nBasePrice#".$BasePrice,
-		// 	"\r\nAddPrice#".$AddPrice,
-		// 	"\r\nRoundToNearest#".$RoundToNearest,
-		// 	"\r\nSearchItem".$SearchItem,
-		// 	"\r\nSearchCustomer#".$SearchCustomer,
-		// 	"\r\nSearchSupplier#".$SearchSupplier,
-		// 	"\r\nAutomaticRevaluation#".$AutomaticRevaluation,
-		// 	"\r\nTimeZone#".$TimeZone,
-		// 	"\r\nLoginTimeout#".$LoginTimeout,
-
-		// );
-
 		$data = array(
 			"Company_Name" =>$Company,
 			"Address"=>$Address,
@@ -113,18 +76,14 @@ class Setup_controller extends CI_Controller {
 			"AutomaticRevaluation"=>$AutomaticRevaluation,
 			"TimeZone"=>$TimeZone,
 			"LoginTimeout"=>$LoginTimeout,
-
 		);
 
 		$file = json_encode($data);
 		  
 		    $file_path = APPPATH . "../assets/CompanySetup.ini";
-			if(file_exists($file_path))
-			{
+			if(file_exists($file_path)){
 			    write_file($file_path, $file);
-			}
-			else
-			{
+			}else{
 			    write_file($file_path, $file);
 			}
 
