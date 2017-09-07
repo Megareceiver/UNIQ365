@@ -244,7 +244,7 @@ body {
     z-index: 4;
     top: 55px;
     left: 0;
-    text-align: left;
+    /* text-align: center; temporary*/ 
   }
   .uniq-menu ul,
   .uniq-menu li {
@@ -390,9 +390,6 @@ body {
       margin-top: -3px;
     }
   }
-  .uniq-menu ul li.left-menu span:hover div {
-    margin-left: -230px;
-  }
 }
 .uniq-content {
   display: table;
@@ -410,7 +407,7 @@ body {
   padding: 20px;
   margin: 110px 10px 10px 10px;
   background: #fff;
-  min-height: 900px;
+  /* min-height: 900px; temporary*/
   border: 1px solid #ddd;
 }
 .uniq-content .wrapped .container {
