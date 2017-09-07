@@ -100,7 +100,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 });
 </script>
 
-
+<div name-module="setup">
 <form class="uniq-form" style="width: 80%;" id="form">
     <div class="uniq-col col-2">
         <ul>
@@ -339,7 +339,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
         </ul>
     </div>
 </form>
-
+</div>
 
 <!-- Success Message -->
 <div class="uniq-message" id="successAlert">

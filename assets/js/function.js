@@ -1,18 +1,23 @@
+onLoadModule();
+
 $('[lang-package]').unbind().on("click", function(e){
     var language = $(this).attr('lang-package');
-    loadFileAsText(language);
+    var module   = $('[name-module]').attr('name-module');
+    loadFileAsText(language,module);
     setCookie("language",language,1);
 });
-getCookie('language');
-// loadFileAsText();
-function loadFileAsText(language){
+function onLoadModule(){
+    var language = getCookie('language');
+    var module   = $('[name-module]').attr('name-module');
+    loadFileAsText(language,module);
+}
+function loadFileAsText(language, module){
     var fileContents = "";
-    var csrfName = '<?php echo $this->security->get_csrf_token_name();?>';
-    var csrfHash = '<?php echo $this->security->get_csrf_hash();?>';
-    var fileInput = "assets/language/package/"+language+"/home.ini";
+    var baseUrl      = window.location.origin;
+    var fileInput    ="/uniq365/assets/language/package/"+language+"/"+module+".ini";
 
     $.ajax({
-            url: fileInput,
+            url: baseUrl+fileInput,
             type: 'get',
             dataType : 'text',
             async: false,
@@ -20,8 +25,7 @@ function loadFileAsText(language){
                 fileContents = data;
             }
         });
-    changeLanguage(fileContents);
-// console.log('nah');
+   changeLanguage (fileContents);
 }
 
 function changeLanguage(fileContents){
@@ -53,9 +57,9 @@ function getCookie(cname) {
         }
     }
     if(result == ''){
-        loadFileAsText('e');
+        return 'en';
     }else{
-        loadFileAsText(result);
+        return result;
     }
     // return "";
 }
