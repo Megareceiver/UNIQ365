@@ -100,7 +100,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
 });
 </script>
 
-<div name-module="setup">
+<div parent-module="setup" name-module="company_setup">
 <form class="uniq-form" style="width: 80%;" id="form">
     <div class="uniq-col col-2">
         <ul>

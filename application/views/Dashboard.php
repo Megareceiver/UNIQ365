@@ -1,4 +1,4 @@
-<div class="container" name-module="home">
+<div class="container" parent-module="home" name-module="dashboard">
     <!-- content start here -->
     <ul class="uniq-dashboard-list">
         <li>
