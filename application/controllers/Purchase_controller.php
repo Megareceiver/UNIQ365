@@ -11,11 +11,25 @@ class Purchase_controller extends CI_Controller {
 
 	//Operations Modul
 	//load view dropdown menu Operations - purchase order
+
+	//==== purchase Order
 	public function PurchaseOrder()
 	{
 		$title['title'] = "Purchase Orders";
         $this->template->load('Template','/purchase/Operations/PurchaseOrder',$title);
 	}
+
+	public function AddNewPurchases()
+	{
+        if(isset($_POST['submit'])){
+            
+        }else{
+            $title['title'] = "Purchase Order Entry";
+        	$this->template->load('Template','/purchase/Operations/PurchaseOrderEntry',$title);
+        }
+	}
+
+	//==== End purchase Order
 
 	//load view dropdown menu Operations - DirectGrn
 	public function DirectGrn()

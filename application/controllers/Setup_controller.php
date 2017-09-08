@@ -108,6 +108,68 @@ class Setup_controller extends CI_Controller {
     	$this->template->load('Template','/setup/CompanySetup/FormsSetup',$title);
 	}
 
+	public function FormsSaveData(){
+		$this->load->helper('file');
+
+		$JournalEntry = $this->input->post('JournalEntry');
+		$BankPayment = $this->input->post('BankPayment');
+		$BankDeposit = $this->input->post('BankDeposit');	
+		$FoundsTransfer = $this->input->post('FoundsTransfer');	
+		$SalesInvoice = $this->input->post('SalesInvoice');			
+		$CustomerCreditNote = $this->input->post('EmailAddress');	
+		$CustomerPayment = $this->input->post('CustomerPayment');	
+		$DeliveryNote = $this->input->post('DeliveryNote');	
+		$LocationTransfer = $this->input->post('LocationTransfer');	
+		$InventoryAdjustment = $this->input->post('InventoryAdjustment');	
+		$PurchaseOrder = $this->input->post('PurchaseOrder');	
+		$SupplierInvoice = $this->input->post('SupplierInvoice');	
+		$SupplierCreditNote = $this->input->post('SupplierCreditNote');	
+		$SupplierPayment = $this->input->post('SupplierPayment');	
+		$PurchaseOrderDelivery = $this->input->post('PurchaseOrderDelivery');	
+		$WorkOrder = $this->input->post('WorkOrder');	
+		$WorkOrderIssue = $this->input->post('WorkOrderIssue');	
+		$WorkOrderProduction = $this->input->post('WorkOrderProduction');	
+		$SalesOrder = $this->input->post('SalesOrder');	
+		$SalesQuotation = $this->input->post('SalesQuotation');	
+		$CostUpdate = $this->input->post('CostUpdate');	
+		$Dimension = $this->input->post('Dimension');	
+
+		$data = array(
+			"JournalEntry" =>$JournalEntry,
+			"BankPayment"=>$BankPayment,
+			"BankDeposit"=>$BankDeposit,
+			"SalesInvoice"=>$SalesInvoice,
+			"CustomerCreditNote"=>$CustomerCreditNote,
+			"CustomerPayment"=>$CustomerPayment, 
+			"DeliveryNote"=>$DeliveryNote,
+			"LocationTransfer"=>$LocationTransfer,
+			"InventoryAdjustment"=>$InventoryAdjustment, 
+			"PurchaseOrder"=>$PurchaseOrder, 
+			"SupplierInvoice"=>$SupplierInvoice, 
+			"SupplierCreditNote"=>$SupplierCreditNote,
+			"SupplierPayment"=>$SupplierPayment,
+			"PurchaseOrderDelivery"=>$PurchaseOrderDelivery,
+			"WorkOrder"=>$WorkOrder,
+			"WorkOrderIssue"=>$WorkOrderIssue,
+			"WorkOrderProduction"=>$WorkOrderProduction,
+			"SalesOrder"=>$SalesOrder,
+			"SalesQuotation"=>$SalesQuotation,
+			"CostUpdate"=>$CostUpdate,
+			"Dimension"=>$Dimension,
+		);
+
+		$file = json_encode($data);
+		  
+		    $file_path = APPPATH . "../assets/config/setup/FormsSetup.ini";
+			if(file_exists($file_path)){
+			    write_file($file_path, $file);
+			}else{
+			    write_file($file_path, $file);
+			}
+
+        echo json_encode($data);
+	}
+
 	// =========End Form setup 
 	
 	public function TaxType(){
