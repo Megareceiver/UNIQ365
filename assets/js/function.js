@@ -1,20 +1,22 @@
 onLoadModule();
 
 $('[lang-package]').unbind().on("click", function(e){
-    var language = $(this).attr('lang-package');
-    var module   = $('[name-module]').attr('name-module');
-    loadFileAsText(language,module);
+    var language        = $(this).attr('lang-package');
+    var module          = $('[name-module]').attr('name-module');
+    var parentModule    = $('[parent-module]').attr('parent-module');
+    loadFileAsText(language,parentModule,module);
     setCookie("language",language,1);
 });
 function onLoadModule(){
-    var language = getCookie('language');
-    var module   = $('[name-module]').attr('name-module');
-    loadFileAsText(language,module);
+    var language        = getCookie('language');
+    var module          = $('[name-module]').attr('name-module');
+    var parentModule    = $('[parent-module]').attr('parent-module');
+    loadFileAsText(language, parentModule, module);
 }
-function loadFileAsText(language, module){
+function loadFileAsText(language, parentModule, module){
     var fileContents = "";
     var baseUrl      = window.location.origin;
-    var fileInput    ="/uniq365/assets/language/package/"+language+"/"+module+".ini";
+    var fileInput    ="/uniq365/assets/language/package/"+language+"/"+parentModule+"/"+module+".ini";
 
     $.ajax({
             url: baseUrl+fileInput,

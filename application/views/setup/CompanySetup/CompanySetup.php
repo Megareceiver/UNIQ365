@@ -29,7 +29,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 
             // $("[name='DeleteLogo']").val(data.DeleteLogo);
 
+            console.log(data.DeleteLogo);
             if (data.DeleteLogo == "DeleteLogo"){
+                console.log('ok');
                 $("#option-1").attr('checked', true);
             }else{
                 $("#option-1").attr('checked', false);
@@ -40,7 +42,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
             $("[name='AddPrice']").val(data.AddPrice);
             $("[name='RoundToNearest']").val(data.RoundToNearest);
             // $("[name='SearchItem']").val(data.SearchItem);
+            console.log(data.SearchItem);
             if (data.SearchItem == "SearchItem"){
+                console.log('ok');
                 $("#option-2").attr('checked', true);
             }else{
                 $("#option-2").attr('checked', false);
@@ -48,7 +52,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 
 
             // $("[name='SearchCustomer']").val(data.SearchCustomer);
+            console.log(data.SearchCustomer);
             if (data.SearchCustomer == "SearchCustomer"){
+                console.log('ok');
                 $("#option-3").attr('checked', true);
             }else{
                 $("#option-3").attr('checked', false);
@@ -56,7 +62,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 
 
             // $("[name='SearchSupplier']").val(data.SearchSupplier);
+            console.log(data.SearchSupplier);
             if (data.SearchSupplier == "SearchSupplier"){
+                console.log('ok');
                 $("#option-4").attr('checked', true);
             }else{
                 $("#option-4").attr('checked', false);
@@ -64,7 +72,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 
 
             // $("[name='AutomaticRevaluation']").val(data.AutomaticRevaluation);
+            console.log(data.AutomaticRevaluation[0]);
             if (data.AutomaticRevaluation == "AutomaticRevaluation"){
+                console.log('ok');
                 $("#option-5").attr('checked', true);
             }else{
                 $("#option-5").attr('checked', false);
@@ -72,7 +82,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 
 
             // $("[name='TimeZone']").val(data.TimeZone);
+            console.log(data.TimeZone);
             if (data.TimeZone[0] == "TimeZone"){
+                console.log('ok');
                 $("#option-6").attr('checked', true);
             }else{
                 $("#option-6").attr('checked', false);
@@ -88,8 +100,8 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 });
 </script>
 
-<div name-module="setup">
-<form class="uniq-form" id="form">
+<div parent-module="setup" name-module="company_setup">
+<form class="uniq-form" style="width: 80%;" id="form">
     <div class="uniq-col col-2">
         <ul>
             <li>
@@ -189,18 +201,17 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
         </ul>
         <ul>
             <li>
-            <label lang-id="scs-021">Tax Periods (<span lang-id="scs-022">Months</span>)</label>
-                <em>
+            <label lang-id="scs-021">Tax Periods</label>
+                
                     <input type="number" name="TaxPeriods">
-                </em>
+                <span lang-id="scs-022">Months</span>
             </li>
         </ul>
         <ul>
             <li>
-            <label lang-id="scs-023">Tax Last Period (<span lang-id="scs-024">Months back</span>)</label>
-                <em>
+            <label lang-id="scs-023">Tax Last Period</label>
                     <input type="number" name="TaxLastPeriods">
-                </em>
+                <span lang-id="scs-024">Months back</span>
             </li>
         </ul>
         <ul>
@@ -215,7 +226,7 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
             <li>
             <label lang-id="scs-026">Company Logo</label>
                 <em>
-                    <input type="text" name="CompanyLogo" disabled="">
+                    <input type="text" name="CompanyLogo">
                 </em>
             </li>
         </ul>
@@ -250,18 +261,14 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
         </ul><br />
         <ul>
             <li>
-            <label lang-id="scs-030">Add Price from Std Cost (<span>%</span>)</label>
-                <em>
-                    <input type="number" name="AddPrice">
-                </em>
+            <label lang-id="scs-030">Add Price from Std Cost</label>
+                    <input type="number" name="AddPrice"><span>%</span>
             </li>
         </ul><br />
         <ul>
             <li>
-            <label lang-id="scs-031">Round to nearest (<span>Cents</span>)</label>
-                <em>
-                    <input type="number" name="RoundToNearest">
-                </em>
+            <label lang-id="scs-031">Round to nearest</label>
+                    <input type="number" name="RoundToNearest"><span>Cents</span>
             </li>
         </ul>
         <ul>
@@ -321,10 +328,8 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
         </ul><br />
         <ul>
             <li>
-            <label lang-id="scs-039">Login Timeout (<span lang-id="scs-040">Seconds</span>)</label>
-                <em>
-                    <input type="number" name="LoginTimeout">
-                </em>
+            <label lang-id="scs-039">Login Timeout</label>
+                    <input type="number" name="LoginTimeout"><span lang-id="scs-040">Seconds</span>
             </li>
         </ul>
         <ul>
@@ -401,6 +406,8 @@ $.ajax({
                 'LoginTimeout':respone.LoginTimeout,}}
 
             ];
+
+            console.log(setup);
             $("#successAlert").addClass('show');
        },
        error: function(){
