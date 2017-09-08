@@ -4,15 +4,15 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0;">
         
-        <link rel="icon" type="/image/x-icon" href="<?php echo site_url()?>Template/uniq/assets/image/favicon.ico" /> 
+        <link rel="icon" type="/image/x-icon" href="<?php echo site_url()?>assets/image/favicon.ico" /> 
         <link type="text/css" rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/uniq-main.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/uniq-component.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/datepicker.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/animate.min.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>Template/uniq/assets/css/uniq.resposive.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/uniq-main.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/uniq-component.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/datepicker.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/animate.min.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/uniq.resposive.css"/>
         
-        <script type="text/javascript" src="<?php echo site_url()?>Template/uniq/assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo site_url()?>assets/js/jquery-1.11.1.min.js"></script>
             <script src="<?php echo site_url()?>assets/js/Chart.bundle.js"></script>
             <!-- <script src="<?php echo site_url()?>assets/js/Chart.js"></script> -->
     </head>

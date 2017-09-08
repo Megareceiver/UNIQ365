@@ -174,7 +174,8 @@ body {
   z-index: 9;
   padding: 20px 20px 0 20px;
   width: 150px;
-  margin-left: -145px;
+  /* margin-left: -145px; */
+  margin-left: -103px; /*temporary*/
   margin-top: 15px;
   background: #ddd;
   text-align: left;
