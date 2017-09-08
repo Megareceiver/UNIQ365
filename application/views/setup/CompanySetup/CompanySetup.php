@@ -189,17 +189,18 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
         </ul>
         <ul>
             <li>
-            <label lang-id="scs-021">Tax Periods</label>
-                
+            <label lang-id="scs-021">Tax Periods (<span lang-id="scs-022">Months</span>)</label>
+                <em>
                     <input type="number" name="TaxPeriods">
-                <span lang-id="scs-022">Months</span>
+                </em>
             </li>
         </ul>
         <ul>
             <li>
-            <label lang-id="scs-023">Tax Last Period</label>
+            <label lang-id="scs-023">Tax Last Period (<span lang-id="scs-024">Months back</span>)</label>
+                <em>
                     <input type="number" name="TaxLastPeriods">
-                <span lang-id="scs-024">Months back</span>
+                </em>
             </li>
         </ul>
         <ul>
@@ -214,7 +215,7 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
             <li>
             <label lang-id="scs-026">Company Logo</label>
                 <em>
-                    <input type="text" name="CompanyLogo">
+                    <input type="text" name="CompanyLogo" disabled="">
                 </em>
             </li>
         </ul>
@@ -249,14 +250,18 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
         </ul><br />
         <ul>
             <li>
-            <label lang-id="scs-030">Add Price from Std Cost</label>
-                    <input type="number" name="AddPrice"><span>%</span>
+            <label lang-id="scs-030">Add Price from Std Cost (<span>%</span>)</label>
+                <em>
+                    <input type="number" name="AddPrice">
+                </em>
             </li>
         </ul><br />
         <ul>
             <li>
-            <label lang-id="scs-031">Round to nearest</label>
-                    <input type="number" name="RoundToNearest"><span>Cents</span>
+            <label lang-id="scs-031">Round to nearest (<span>Cents</span>)</label>
+                <em>
+                    <input type="number" name="RoundToNearest">
+                </em>
             </li>
         </ul>
         <ul>
@@ -316,8 +321,10 @@ var json = '<?php echo site_url()?>assets/CompanySetup.ini';
         </ul><br />
         <ul>
             <li>
-            <label lang-id="scs-039">Login Timeout</label>
-                    <input type="number" name="LoginTimeout"><span lang-id="scs-040">Seconds</span>
+            <label lang-id="scs-039">Login Timeout (<span lang-id="scs-040">Seconds</span>)</label>
+                <em>
+                    <input type="number" name="LoginTimeout">
+                </em>
             </li>
         </ul>
         <ul>
