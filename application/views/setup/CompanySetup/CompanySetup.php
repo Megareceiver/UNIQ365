@@ -1,6 +1,6 @@
 <script type="text/javascript">
 $(document).ready(function(){
-var json = '<?php echo site_url()?>assets/CompanySetup.ini';
+var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 // var data = jQuery.parseJSON(json);
 // console.log(data); // ["apple", "orange", "banana", "strawberry"]
 // alert( data ); // "strawberry"

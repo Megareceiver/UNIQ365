@@ -80,7 +80,7 @@ class Setup_controller extends CI_Controller {
 
 		$file = json_encode($data);
 		  
-		    $file_path = APPPATH . "../assets/CompanySetup.ini";
+		    $file_path = APPPATH . "../assets/config/setup/CompanySetup.ini";
 			if(file_exists($file_path)){
 			    write_file($file_path, $file);
 			}else{
@@ -102,10 +102,13 @@ class Setup_controller extends CI_Controller {
 	public function DisplayPreference(){
 		$this->load->view('/setup/CompanySetup/DisplayPreference');
 	}
-
+	// =========Form setup 
 	public function FormsSetup(){
-		$this->load->view('/setup/CompanySetup/FormsSetup');
+		$title['title'] = "Company Setup";
+    	$this->template->load('Template','/setup/CompanySetup/FormsSetup',$title);
 	}
+
+	// =========End Form setup 
 	
 	public function TaxType(){
 		$this->load->view('/setup/CompanySetup/TaxType');

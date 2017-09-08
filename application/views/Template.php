@@ -421,7 +421,7 @@
                             <a href="#" data-title="UA">User Accounts Setup</a>
                             <a href="#" data-title="AS">Access Setup</a>
                             <a href="#" data-title="DS">Display Setup</a>
-                            <a href="#" data-title="FS">Forms Setup</a>
+                            <a href="<?php echo site_url('Setup_controller/FormsSetup'); ?>" data-title="FS">Forms Setup</a>
                             <a href="#" data-title="TX">Taxes</a>
                             <a href="#" data-title="SG">System and General GL Setup</a>
                             <a href="#" data-title="FY">Fiscal Years</a>
