@@ -101,7 +101,7 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 </script>
 
 <div parent-module="setup" name-module="company_setup">
-<form class="uniq-form" style="width: 80%;" id="form">
+<form class="uniq-form" id="form">
     <div class="uniq-col col-2">
         <ul>
             <li>
@@ -349,7 +349,7 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
             <b class="green" lang-id="scs-042">Success Insert Data</b>
             <span lang-id="scs-043">For close this alaret message you must click the button!</span>
         </p>
-        <a href="#action" class="button">OK</a>
+        <a href="#action" class="button" id="btnpopup">OK</a>
     </div>
 </div>
 
@@ -361,14 +361,9 @@ var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
             <b class="red" lang-id="scs-044">Data Fail To Save!</b>
             <span lang-id="scs-045">For close this alaret message you must click the button!</span>
         </p>
-        <a href="#action" class="button">OK</a>
+        <a href="#action" class="button" id="btnpopup">OK</a>
     </div>
 </div>
-
-
-<script type="text/javascript" src="<?php echo site_url()?>assets/js/datepicker.js"></script>
-<script type="text/javascript" src="<?php echo site_url()?>assets/js/timepicker.js"></script>
-
 
 <script type="text/javascript">
 $("#updateSetup").click(function(){
@@ -407,12 +402,16 @@ $.ajax({
 
             ];
 
-            console.log(setup);
+            // console.log(setup);
             $("#successAlert").addClass('show');
        },
        error: function(){
             $("#FailAlert").addClass('show');
        }
    });
+});
+
+$("#btnpopup").click(function(){
+    location.reload();
 });
 </script>
