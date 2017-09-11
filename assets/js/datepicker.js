@@ -204,7 +204,7 @@ onDOMReady(function(){
       a.className="datepickershow";
       a.setAttribute('onclick','return showDatePicker("' + allElements[i].id + '")');
       var img = document.createElement('img');
-      img.src='assets/image/date-icon.png';
+      img.src='../assets/image/date-icon.png';
       img.title='Show calendar';
       a.appendChild(img);
       insertAfter(a, allElements[i]);

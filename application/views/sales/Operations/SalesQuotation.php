@@ -2,8 +2,9 @@
 	<form class="uniq-form">
 		<ul>
 			<li>
-				<input class="uniq-button" type="button" value="+ new quotation" name="newQuotation" />
+				<input style="float:right;" class="uniq-button" type="button" value="+ new quotation" name="newQuotation" />
 			</li>
+			<div class="clearfix"></div>
 			<li class="uniq-col-5">
 					<label>#</label>
 				<em>
@@ -19,7 +20,7 @@
 			<li class="uniq-col-5">
 					<label>From</label>
 				<em>
-					<input type="text" name="from" id="form_dt" />
+					<input type="text" name="from" id="form_dt" class="datepicker" />
 					<!-- <a href="#" class="datepickershow" onclick="return showDatePicker('form_dt')">
 					</a> -->
 				</em>
@@ -27,7 +28,7 @@
 			<li class="uniq-col-5">
 					<label>To</label>
 				<em>
-					<input type="text" name="to" id="to_dt" />
+					<input type="text" name="to" id="to_dt" class="datepicker" />
 				</em>
 			</li>
 			<li class="uniq-col-5">
@@ -42,19 +43,25 @@
 					</select>
 				</em>
 			</li>
-			<li class="uniq-col col-3">
+			<li class="uniq-col col-4">
 				<em>
 					<label>Product</label>
 					<input type="text" name="product" />
 				</em>
 			</li>
-			<li class="uniq-col col-3">
+			<li class="uniq-col col-4">
 				<em>
 					<label>Customer</label>
 					<input type="text" name="customer" />
 				</em>
 			</li>
-			<li class="uniq-col col-3">
+			<li class="uniq-col col-4">
+				<em class="checkbox">
+					<input id="option-1" type="checkbox" name="field" value="option">
+					<label for="option-1">select all</label>
+				</em>
+			</li>
+			<li class="uniq-col col-4">
 				<input type="button" class="uniq-button" value="search" />
 			</li>
 		</ul>
