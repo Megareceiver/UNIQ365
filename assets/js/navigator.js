@@ -33,7 +33,7 @@ $('[name="newOrder"]').unbind().on('click',function(e){
 });
 
 /*Direct Delivery*/
-$('[name="newQuotation"]').unbind().on('click',function(e){
+$('[name="newDelivery"]').unbind().on('click',function(e){
     var url = window.location.origin;
     // $.ajax({
     //    type :'POST',

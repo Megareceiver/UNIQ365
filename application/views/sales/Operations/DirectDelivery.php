@@ -2,7 +2,7 @@
 	<form class="uniq-form">
 		<ul>
 			<li>
-				<input style="float:right;" type="button" class="uniq-button" name="" value="+ New Delivery" />
+				<input style="float:right;" type="button" class="uniq-button" name="newDelivery" value="+ New Delivery" />
 			<div class="clearfix"></div>
 			</li>
 		</ul>
