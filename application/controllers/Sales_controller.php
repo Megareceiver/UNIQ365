@@ -80,6 +80,11 @@ class Sales_controller extends CI_Controller {
 		$title['title'] = "Allocate Customer Payment or Credit Notes";
         $this->template->load('Template','/sales/Operations/AllocateCustomerPaymentOrCreditNotes',$title);
 	}
+	public function SalesEntry()
+	{
+		$title['title'] = "Sales entry";
+		$data = $this->template->load('Template','/sales/Operations/form/SalesEntry',$title);
+	}
 
 	/*Inquiry*/
 	public function CustomerTransaction()
