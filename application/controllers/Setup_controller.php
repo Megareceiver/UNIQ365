@@ -116,7 +116,7 @@ class Setup_controller extends CI_Controller {
 		$BankDeposit = $this->input->post('BankDeposit');	
 		$FoundsTransfer = $this->input->post('FoundsTransfer');	
 		$SalesInvoice = $this->input->post('SalesInvoice');			
-		$CustomerCreditNote = $this->input->post('EmailAddress');	
+		$CustomerCreditNote = $this->input->post('CustomerCreditNote');	
 		$CustomerPayment = $this->input->post('CustomerPayment');	
 		$DeliveryNote = $this->input->post('DeliveryNote');	
 		$LocationTransfer = $this->input->post('LocationTransfer');	
@@ -138,6 +138,7 @@ class Setup_controller extends CI_Controller {
 			"JournalEntry" =>$JournalEntry,
 			"BankPayment"=>$BankPayment,
 			"BankDeposit"=>$BankDeposit,
+			"FoundsTransfer"=>$FoundsTransfer,
 			"SalesInvoice"=>$SalesInvoice,
 			"CustomerCreditNote"=>$CustomerCreditNote,
 			"CustomerPayment"=>$CustomerPayment, 

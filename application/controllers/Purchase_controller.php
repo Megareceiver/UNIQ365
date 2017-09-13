@@ -34,7 +34,7 @@ class Purchase_controller extends CI_Controller {
 	//load view dropdown menu Operations - DirectGrn
 	public function DirectGrn()
 	{
-		$title['title'] = "Direct GRN";
+		$title['title'] = "Supplier Inquiry";
         $this->template->load('Template','/purchase/Operations/DirectGrn',$title);
 	}
 
