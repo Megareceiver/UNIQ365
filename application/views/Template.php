@@ -4,8 +4,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0;">
         
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap.min.css"/>
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap-theme.min.css"/>
+        <!-- <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap.min.css"/> -->
+        <!-- <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap-theme.min.css"/> -->
         <link rel="icon" type="/image/x-icon" href="<?php echo site_url()?>assets/image/favicon.ico" /> 
         <link type="text/css" rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/uniq-main.css"/>
@@ -46,7 +46,7 @@
                 <li>
                     <a href="<?php echo site_url('Login')?>" class="fa fa-power-off"></a>
                 </li>
-                <li id="lang">
+                <!-- <li id="lang">
                     <label class="fa fa-globe drop"></label>
                     <div>
                         <a href="#" lang-package = 'en'><i class="fa fa-flag" aria-hidden="true"></i> English</a>
@@ -57,7 +57,7 @@
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Vietnam</a>
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Thailand</a>
                     </div>
-                </li>
+                </li> -->
                 <li class="mobile-menu">
                     <a href="#" class="fa fa-bars"></a>
                 </li>
@@ -493,7 +493,7 @@
 
 
 <!-- Fotter -->
-    <script type="text/javascript" src="<?php echo site_url()?>assets/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="<?php echo site_url()?>assets/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/datepicker.js"></script>
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/timepicker.js"></script>
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/function.js"></script>
