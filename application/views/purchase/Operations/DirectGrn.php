@@ -1,4 +1,4 @@
-<div parent-module="purchase" name-module="purchase_order">
+<div parent-module="purchase" name-module="direct_grn">
 	<form class="uniq-form">
 		<ul>
 			<li class="uniq-col-5" style="margin-top: 12; display: block; margin-bottom: 15px; clear: none; float: right;">
@@ -60,7 +60,7 @@
                 <td lang-id="pdg-010">Date</td>
                 <td lang-id="pdg-011">Currency</td>
                 <td lang-id="pdg-012">Debit</td>
-                <td lang-id="pdg-012">Credit</td>
+                <td lang-id="pdg-013">Credit</td>
                 <td></td>
                 <td></td>
                 <td></td>

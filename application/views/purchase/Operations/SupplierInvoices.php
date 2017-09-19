@@ -1,8 +1,8 @@
-<div parent-module="purchase" name-module="purchase_order">
+<div parent-module="purchase" name-module="supplier_invoice">
 	<form class="uniq-form">
 		<ul>
 			<li class="uniq-col-5" style="margin-top: 12; display: block; margin-bottom: 15px; clear: none; float: right;">
-                <input class="uniq-button" type="button" lang-id="psi-013" value="Add New Overude Invoices" style="height: 40px;">
+                <input class="uniq-button" type="button" lang-id="psi-014" value="Add New Overude Invoices" style="height: 40px;">
             </li>
 		</ul>
 		<ul>
@@ -60,7 +60,7 @@
                 <td lang-id="psi-010">Date</td>
                 <td lang-id="psi-011">Currency</td>
                 <td lang-id="psi-012">Debit</td>
-                <td lang-id="psi-012">Credit</td>
+                <td lang-id="psi-013">Credit</td>
                 <td></td>
                 <td></td>
                 <td></td>

@@ -1,8 +1,8 @@
-<div parent-module="purchase" name-module="purchase_order">
+<div parent-module="purchase" name-module="direct_invoice">
 	<form class="uniq-form">
 		<ul>
 			<li class="uniq-col-5" style="margin-top: 12; display: block; margin-bottom: 15px; clear: none; float: right;">
-                <input class="uniq-button" type="button" lang-id="pdi-013" value="Add New Invoices" style="height: 40px;">
+                <input class="uniq-button" type="button" lang-id="pdi-014" value="Add New Invoices" style="height: 40px;">
             </li>
 		</ul>
 		<ul>
@@ -60,7 +60,7 @@
                 <td lang-id="pdi-010">Date</td>
                 <td lang-id="pdi-011">Currency</td>
                 <td lang-id="pdi-012">Debit</td>
-                <td lang-id="pdi-012">Credit</td>
+                <td lang-id="pdi-013">Credit</td>
                 <td></td>
                 <td></td>
                 <td></td>

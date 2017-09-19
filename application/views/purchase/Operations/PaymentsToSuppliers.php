@@ -1,7 +1,7 @@
 <div parent-module="purchase" name-module="purchase_order">
 	<form class="uniq-form">
 		<ul>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" style="margin-left: 20%">
             <span lang-id="pps-001">Payment To</span>
                 <em>
                     <select>
@@ -12,13 +12,13 @@
                     </select>
                 </em>
             </li>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" >
             <span lang-id="pps-002"> Date Paid</span>
                 <em>
                     <input type="text" id="from_dt" class="datepicker" />
                 </em>
             </li>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" >
             <span lang-id="pps-003"> Bank Charge</span>
                 <em>
                     <input type="text" />
@@ -26,7 +26,7 @@
             </li>
         </ul>	
         <ul>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" style="margin-left: 20%">
             <span lang-id="pps-004">From Bank Account</span>
                 <em>
                     <select>
@@ -35,7 +35,7 @@
                     </select>
                 </em>
             </li>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" >
             <span lang-id="pps-005"> Reference</span>
                 <em>
                     <input type="text" />
@@ -43,13 +43,13 @@
             </li>
         </ul>
         <ul>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" style="margin-left: 20%">
             <span lang-id="pps-006">Bank Balance</span>
                 <em>
                    <input type="text" />
                 </em>
             </li>
-            <li class="uniq-col-5" style="float: left; width: 15%; clear: none; padding-left: 0;">
+            <li class="uniq-col-5" >
             <span lang-id="pps-007"> Cheque No.</span>
                 <em>
                     <input type="text" />
@@ -81,12 +81,12 @@
                 <em>
                    <input type="text" />
                 </em>
-
+                <br />
             <span lang-id="pps-017"> Amount of Payment</span>
                 <em>
                     <input type="text" />
                 </em>
-
+                <br />
             <span lang-id="pps-018"> Memo</span>
                 <em>
                     <textarea lang-id="pps-019"></textarea>
