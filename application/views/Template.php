@@ -4,8 +4,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0;">
         
-        <!-- <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap.min.css"/> -->
-        <!-- <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap-theme.min.css"/> -->
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/bootstrap-theme.min.css"/>
         <link rel="icon" type="/image/x-icon" href="<?php echo site_url()?>assets/image/favicon.ico" /> 
         <link type="text/css" rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo site_url()?>assets/css/uniq-main.css"/>
@@ -46,7 +46,7 @@
                 <li>
                     <a href="<?php echo site_url('Login')?>" class="fa fa-power-off"></a>
                 </li>
-                <!-- <li id="lang">
+                <li id="lang">
                     <label class="fa fa-globe drop"></label>
                     <div>
                         <a href="#" lang-package = 'en'><i class="fa fa-flag" aria-hidden="true"></i> English</a>
@@ -57,7 +57,7 @@
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Vietnam</a>
                         <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Thailand</a>
                     </div>
-                </li> -->
+                </li>
                 <li class="mobile-menu">
                     <a href="#" class="fa fa-bars"></a>
                 </li>
@@ -419,17 +419,17 @@
                     <span>
                         <a href="#" class="menu-sub-child" data-title="CP">Company</a>
                         <div>
-                            <a href="#" data-title="ID">Import Data</a>
+                            <a href="<?php echo site_url('Setup_controller/ImportData'); ?>" data-title="ID">Import Data</a>
                             <a href="<?php echo site_url('Setup_controller/CompanySetup'); ?>" data-title="CS">Company Setup</a>
-                            <a href="#" data-title="UA">User Accounts Setup</a>
-                            <a href="#" data-title="AS">Access Setup</a>
-                            <a href="#" data-title="DS">Display Setup</a>
+                            <a href="<?php echo site_url('Setup_controller/UsersSetup'); ?>" data-title="UA">User Accounts Setup</a>
+                            <a href="<?php echo site_url('Setup_controller/SecurityRoles'); ?>" data-title="AS">Access Setup</a>
+                            <a href="<?php echo site_url('Setup_controller/DisplayPreference'); ?>" data-title="DS">Display Setup</a>
                             <a href="<?php echo site_url('Setup_controller/FormsSetup'); ?>" data-title="FS">Forms Setup</a>
-                            <a href="#" data-title="TX">Taxes</a>
-                            <a href="#" data-title="SG">System and General GL Setup</a>
-                            <a href="#" data-title="FY">Fiscal Years</a>
-                            <a href="#" data-title="ET">Expense Type</a>
-                            <a href="#" data-title="RT">Revenue Type</a>
+                            <a href="<?php echo site_url('Setup_controller/TaxType'); ?>" data-title="TX">Taxes</a>
+                            <a href="<?php echo site_url('Setup_controller/GlSetup'); ?>" data-title="SG">System and General GL Setup</a>
+                            <a href="<?php echo site_url('Setup_controller/FiscalYears'); ?>" data-title="FY">Fiscal Years</a>
+<!--                             <a href="#" data-title="ET">Expense Type</a>
+                            <a href="#" data-title="RT">Revenue Type</a> -->
 
                         </div>
                     </span>
@@ -437,11 +437,11 @@
                     <span>
                         <a href="#" class="menu-sub-child" data-title="MC">Miscellaneous</a>
                         <div>
-                            <a href="#" data-title="PT">Payment Terms</a>
-                            <a href="#" data-title="SC">Shipping Company</a>
-                            <a href="#" data-title="PS">Points of Sale</a>
-                            <a href="#" data-title="PT">Printers</a>
-                            <a href="#" data-title="CC">Contact Categories</a>
+                            <a href="<?php echo site_url('Setup_controller/PaymentTerm'); ?>" data-title="PT">Payment Terms</a>
+                            <a href="<?php echo site_url('Setup_controller/ShippingCompanies'); ?>" data-title="SC">Shipping Company</a>
+                            <a href="<?php echo site_url('Setup_controller/SalesPoint'); ?>" data-title="PS">Points of Sale</a>
+                            <a href="<?php echo site_url('Setup_controller/Printers'); ?>" data-title="PT">Printers</a>
+                            <a href="<?php echo site_url('Setup_controller/ContactCategories'); ?>" data-title="CC">Contact Categories</a>
                             
                         </div>
                     </span>
@@ -493,7 +493,7 @@
 
 
 <!-- Fotter -->
-    <!-- <script type="text/javascript" src="<?php echo site_url()?>assets/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="<?php echo site_url()?>assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/datepicker.js"></script>
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/timepicker.js"></script>
     <script type="text/javascript" src="<?php echo site_url()?>assets/js/function.js"></script>
