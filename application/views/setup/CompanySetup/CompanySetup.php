@@ -1,4 +1,4 @@
-<script type="text/javascript">
+x<script type="text/javascript">
 $(document).ready(function(){
 var json = '<?php echo site_url()?>assets/config/setup/CompanySetup.ini';
 // var data = jQuery.parseJSON(json);
